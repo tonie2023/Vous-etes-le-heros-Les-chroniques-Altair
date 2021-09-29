@@ -6,4 +6,4 @@
 **Inspiration : [Les chevaliers d'Antarès](https://www.anne-robillard.com/les-chevaliers-d-antares)**
 **Palette de couleurs : [coolors.co](https://coolors.co/fffffa-575a5e-3a3e3b-c5d5e4-39a0ed)**
 
-![Diagramme] (https://dion_antoine_synopsis_582_324MO.jpg)
+![Diagramme] (https://C:/Users/Antoine/Documents/01_Antoine_automne2021/04_developpement_web(Simon)/dion_antoine_projet_session_582_324MO\dion_antoine_projet_session_partie_02_582_324MO\assetsdion_antoine_synopsis_582_324MO.jpg)
