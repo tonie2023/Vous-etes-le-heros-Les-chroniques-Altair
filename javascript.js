@@ -384,7 +384,7 @@ let chaptersObj = {
   La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pour Malgus.`,
   img: "assets/",
   },
-  epilogue : {
+  epilogue: {
   subtitle: "Fin heureuse",
   text: `Une fois que les célébrations furent terminées, il était temps pour lui d'avoir une fin heureuse dans ce royaume qui était devenu le sien(sachant qu'il ne savait pas comment retourner d'où il venait à l'origine).
   Il maria la commandante Anna des furtifs et ce fut la meilleure décision qu'il prit depuis son arrivé. 
