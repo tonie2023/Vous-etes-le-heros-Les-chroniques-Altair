@@ -156,7 +156,7 @@ let consécration = {
   Il était maintenant temps de parler de paix et d'avenir.`,
   img: "assets/",
   options:[
-    text : "La vie repris son cours et Marcel fut jugé", "Marcel ne fut pas juger immédiatement après la victoire", "Marcel s'est échappé"],
+    text: "La vie repris son cours et Marcel fut jugé", "Marcel ne fut pas juger immédiatement après la victoire", "Marcel s'est échappé"],
 };
 let paix = {
   subtitle: "Retour triomphale",
@@ -353,7 +353,7 @@ let chaptersObj = {
   Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour qu'ils t'interrogent ou mourrir. Et, j'ai choisi de vivre!!!".`,
   img: "assets/",
   },
-  fuitehero: {
+  fuite_hero: {
     subtitle: "Retour au front",
     text: `Suite à cette trahison de Marcel. Malgus fut emmené et interrogé par ses ravisseurs, mais il ne révéla rien.
     La troisième nuit de sa captivité, il parvient à fuir et à rentrer au camps de base des furtifs, où il raconta la trahison de Marcel.
@@ -392,10 +392,7 @@ let chaptersObj = {
   img: "assets/",
   }
 };
-function goToChapter (){
-  console.log(chapterObj[chapterName].subtitle);
-  console.log(chapterObj[chapterName].text);
-  console.log(chapterObj[chapterName].img);
-  console.log(chapterObj[chapterName].options);
-}
-chapitre(); 
+function goToChapter (chapitre){
+  const chapitre = [introduction, reveil_hero, interrogation_malgus, inquisition, destin_positif, destin_negatif, integration_armee, faction_1, faction_2, faction_3, faction_4, premiers_combats, confiance_mutuelle, consternation, fuite_hero, consecration, paix, epilogue ];
+  console.log(chapitre)
+} 
