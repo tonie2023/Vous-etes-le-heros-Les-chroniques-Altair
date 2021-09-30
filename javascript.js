@@ -53,7 +53,7 @@ let destinPositif = {
   option: ["Amavia offre à Malgus d'intégrer son armée", "Rester en cellule une journée de plus"],
 }
 let destinNégatif = {
-  subtitle: `Partie terminé`,
+  subtitle: "Partie terminé",
   text: `Notre héro en cellule attendait la réponse de la commandante Amavia avec nervosité. 
   Après 5 minutes de réflexion, elle donna sa décision : "Malgus, après ce que vous venez de me révéler sur vous, j'ai pesé le pour et le contre et je ne vous crois pas.".
   Malgis(Malgus) : "Mais, pourquoi!?" dit-il d'un ton plaintif. Amavia répondit : "Il y a des éléments qui ne marchent pas dans votre histoire, 
@@ -61,72 +61,90 @@ let destinNégatif = {
   img:,
   option: ["La partie est terminé, veuillez recommencer une nouvelle partie!"],
 }
-let insertionHéroïque= {
-  subtitle: `Magnolia`,
-  text:,
+let intégrationArmée= {
+  subtitle: "Magnolia",
+  text: `Malgus choisis d'accepter l'offre de la commandante. Suite à la décision du héro, Amavia lui expliqua que le royaume de Magnolia est en guerre contre des envahisseurs d'outre-mer que l'on appel les discariens :
+  Une race hybride mi-homme mi-féline. Elle expliqua également que cela fait 10 ans que la guerre a commencé et que les armées de Magnolia perdaient du terrain
+  et que le royaume risquait depuis peu la défaite face à ces envahisseurs discariens. Elle finit en disant : "Voilà, la situation actuelle. est-ce que vous avez des questions ?"
+  Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, il est temps pour vous de choisir entre 4 factions de l'armée : furtif, guerriers, tacticien ou berserker." `,
   img:,
-  option:,
+  option: ["Furtif", "Guerrier", "Tacticien", "Berserker"],
 }
-let assignationFaction= {
-  subtitle:,
-  text:,
+let faction1= {
+  subtitle: "Les furtifs",
+  text: `Amavia fit la description de cette faction : "Les furtifs sont des soldats qui ont appris des méthodes permettant de mettre hors d'état de nuire ou de tuer leurs adversaires discariens.
+  En choisissant cette faction, tu apprendras alors les techniques de combats et les méthodes propre aux soldat furtifs et ton équipement militaire sera adapté pour convenir à cette faction
+  et modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s'appelle Anna 28 ans."`,
   img:,
-  option:,
+  option: ["Choisir", "Revenir au menu des factions"],
 }
-let souschap2_1 = {
-  subtitle:,
-  text:,
+let faction2 = {
+  subtitle: "Les guerriers",
+  text: `Amavia fit la description de cette faction : "Les guerriers est la faction principale de l'armée de Magnolia.
+  En choisissant cette faction, tu recevras une formation guerrière et un équipement militaire conséquent à ton choix de faction et 
+  modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s"appelle Iriana 27 ans"`,
   img:,
-  option:,
+  option: ["Choisir", "Revenir au menu des factions"],
 }
-let souschap2_2 = {
-  subtitle:,
-  text:,
+let faction3 = {
+  subtitle: "Les tacticiens",
+  text: `Amavia fit la description de cette faction : "Les tacticiens est une faction de soldat plus petite puisqu'elle ne compte que des gens ayant une grande intelligence 
+  et un instinct tactique très développé. Il s'agit de la faction la plus difficile, car la formation est très difficile mais payante à la fin. Par contre Malgus, pour le choix de l'équipement militaire tu devras faire preuve de discernement dans tes choix,
+  car cela aura une influence de comment le commandant de cette faction fera appel à toi pour les missions(Cette faction est la seule où ton choix d'équpement militaire ne peut être modifié qu'une fois).
+  Le commandant de cette faction s'appel Victor 40 ans.".`,
   img:,
-  option:,
+  option: ["Choisir", "Revenir au menu des factions"],
+}
+let faction4 = {
+  subtitle: "Les berserkers",
+  text: `Amavia fit la description de cette faction : Les berserkers sont une faction de soldat que l'on pourrait qualifié de casse-cou dans le sens qu'ils ne réfléchissent pas avant de foncer sur l'ennemi discarien.
+  Pourtant, elles très efficaces même s'ils subissent des pertes importantes en conséquence de leur précipitation sur le champs de bataille. Cette faction à la particularité
+  de combiner l'apprentissage des furtifs et des guerriers pour ainsi donner un style de combat improvisé, mais efficace. Quant, à l'équipement militaire, la combinaison mentionnée plus haut te permet d'avoir accès aux équipements des deux factions
+  et modifiable au cours de ton périple dans cett guerre. Le commandant s'appel Ivan l'audacieux 32 ans.`,
+  img:,
+  option: ["Choisir", "Revenir au menu des factions"],
 }
 let premiersCombats= {
   subtitle:,
-  text:,
+  text: ``,
   img:,
   option:,
 }
 let souschap3_1 = {
   subtitle:,
-  text:,
+  text: ``,
   img:,
   option:,
 }
 let souschap3_2 = {
   subtitle:,
-  text:,
+  text: ``,
   img:,
   option:,
 }
 let alliance= {
   subtitle:,
-  text:,
+  text: ``,
   img:,
   option:,
 }
 let consécration = {
   subtitle:,
-  text:,
+  text: ``,
   img:,
   option:,
 }
 let paix= {
   subtitle:,
-  text:,
+  text: ``,
   img:,
   option:,
 }
 let epilogue = {
   subtitle:,
-  text:,
+  text: ``,
   img:,
   option:,
 }
 let chaptersObj = {
-    :,
 }
