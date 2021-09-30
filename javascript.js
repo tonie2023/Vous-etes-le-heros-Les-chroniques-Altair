@@ -392,7 +392,8 @@ let chaptersObj = {
   img: "assets/",
   }
 };
-function goToChapter (chapitre){
-  const chapitre = ["introduction", "reveil_hero", "interrogation_malgus", "inquisition", "destin_positif", "destin_negatif", "integration_armee", "faction_1", "faction_2", "faction_3", "faction_4", "premiers_combats", "confiance_mutuelle", "consternation", "fuite_hero", "consecration", "paix", "epilogue"];
-  console.log(chapitre)
+function goToChapter (chapterName){
+  const chapitre = chapterName;
+  console.log(`${chapterName.chaptersObj}`)
 } 
+goTochapter ();
