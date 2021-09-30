@@ -173,7 +173,7 @@ let epilogue = {
   Félicitation!!! Vous venez de finir le jeu, si vous voulez rejouer appuyer sur le bouton nouvelle partie.
   Je vous remercie d'avoir jouer à mon jeu!`,
   img: "assets/",
-};
+},
 let chaptersObj = {
   introduction: {
     subtitle: "Introduction du héro",
@@ -183,7 +183,7 @@ let chaptersObj = {
     À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux
     une femme en armure posa la question suivante : Qui êtes-vous ?`,
     img: "assets/",
-  },
+},
   reveil_hero: {
     subtitle: "Réveil du héro",
     text: `Malgus d'Astoria prit dans un phénomène magique inconnu perdit connaissance pour reprendre conscience dans une cellule.
@@ -317,7 +317,7 @@ let chaptersObj = {
         text: "Revenir au menu des factions",
         action: "gotochapter(`integration_armee`)",
       },],  
-  }
+  },
   premiers_combats: {
   subtitle: "Marche vers les envahisseurs discariens",
   text: `Malgus choisis la faction furtive. Une fois que la formation des furtives fut terminée, la commandante Amavia vint lui expliquer que le choix d'arme au début
@@ -391,7 +391,7 @@ let chaptersObj = {
   Félicitation!!! Vous venez de finir le jeu, si vous voulez rejouer appuyer sur le bouton nouvelle partie.
   Je vous remercie d'avoir jouer à mon jeu!`,
   img: "assets/",
-  },
+  }
 };
 const chapitre = function (){
   console.log(chapterObj[chapterName].subtitle);
