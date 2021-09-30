@@ -1,12 +1,12 @@
 let introduction = {
   subtitle: "Introduction du héro",
   text: `Bonjour aventuriers, aventurières! 
-         Mon nom est Malgus noid et j'ai 27 ans.
-         Je viens de la dimension Altaria où dans mon monde la magie peut être utiliser par tous ces habitants.
-         Je suis originaire du pays Alcoria et je suis commandant de l'armée du pays.
-         Mon histoire débuta lors d'une patrouille en forêt avec mes hommes où un phénomène magique se produisit me séparant de mes hommes et me faisant perdre connaissance.
-         À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux
-        une femme en armure posa la question suivante : Qui êtes-vous ?`,
+  Mon nom est Malgus noid et j'ai 27 ans.
+  Je viens de la dimension Altaria où dans mon monde la magie peut être utiliser par tous ces habitants.
+  Je suis originaire du pays Alcoria et je suis commandant de l'armée du pays.
+  Mon histoire débuta lors d'une patrouille en forêt avec mes hommes où un phénomène magique se produisit me séparant de mes hommes et me faisant perdre connaissance.
+  À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux
+  une femme en armure posa la question suivante : Qui êtes-vous ?`,
   img:,
 }
 
@@ -52,7 +52,7 @@ let destinPositif = {
   img:,
   option: ["Amavia offre à Malgus d'intégrer son armée", "Rester en cellule une journée de plus"],
 }
-let destinNégatif = {
+let destinNegatif = {
   subtitle: "Partie terminé",
   text: `Notre héro en cellule attendait la réponse de la commandante Amavia avec nervosité. 
   Après 5 minutes de réflexion, elle donna sa décision : "Malgus, après ce que vous venez de me révéler sur vous, j'ai pesé le pour et le contre et je ne vous crois pas.".
@@ -61,7 +61,7 @@ let destinNégatif = {
   img:,
   option: ["La partie est terminé, veuillez recommencer une nouvelle partie!"],
 }
-let intégrationArmée= {
+let integrationArmee= {
   subtitle: "Magnolia",
   text: `Malgus choisis d'accepter l'offre de la commandante. Suite à la décision du héro, Amavia lui expliqua que le royaume de Magnolia est en guerre contre des envahisseurs d'outre-mer que l'on appel les discariens :
   Une race hybride mi-homme mi-féline. Elle expliqua également que cela fait 10 ans que la guerre a commencé et que les armées de Magnolia perdaient du terrain
@@ -105,46 +105,60 @@ let faction4 = {
   option: ["Choisir", "Revenir au menu des factions"],
 }
 let premiersCombats= {
-  subtitle:,
-  text: ``,
+  subtitle: "Marche vers les envahisseurs discariens",
+  text: `Malgus choisis la faction furtive. Une fois que la formation des furtives fut terminée, la commandante Amavia vint lui expliquer que le choix d'arme au début
+  se compose d'une arme à feu à projectile magique, d'une épée et/ou poignard. Par la suite, Malgus prit la route vers ces premiers combats. Cela faisait 3 mois qu'il était apparu dans ce monde
+  et qu'il avait intégré l'armée de Magnolia. Les premiers affrontements furent difficile, mais victorieux au cours duquel
+  il se distingua par sa bravoure, son intelligence et son travail d'équipe avec ces frères et soeurs d'arme. 
+  Ces faits d'arme lui permis de gagner la confiance des autres et des alliés.`,
+  img:,
+  option: ["La commandante Amavia et la commandante Anna deviennent tes plus proches alliées", "Malgus se fait de nombreux alliés dont la commandante Amavia et Anna", "Malgus ne réussit qu'à avoir qu'un seul allié"],
+}
+let confianceMutuelle = {
+  subtitle: "Frères et soeurs d'arme unis",
+  text: `Par ses actes, sa bravoure, son intelligence et son travail d'équipe,
+  Malgus se fit de nombreux alliés dont certaines devirent plus proche au point de développer des sentiments pour lui. 
+  Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés dans sa faction allait le trahir prochainement.`,
   img:,
   option:,
 }
-let souschap3_1 = {
-  subtitle:,
-  text: ``,
+let consternation= {
+  subtitle: "Trahison d'un ami",
+  text: `Au cours des 2 mois suivant, malgré quelques défaites mineures, Malgus et sa faction remportèrent d'importantes victoires poussant l'ennemi discarien dans ses derniers retranchements.
+  Au cours de cette série de victoire, Malgus se rapprocha des commandantes Amavia et Anna, se fit des amis 
+  dont Marcel qui avait un comportement étrange depuis quelque temps. Sachant que la victoire finale était proche, l'armée de Magnolia lança le dernier assaut contre les discariens.
+  Pendant, la bataille Malgus et Marcel se retrouvèrent séparer des autres. Malgus dit :"Ne perd pas espoir, nous allons nous en sortir et rejoindre les autres."
+  Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. En Avant de perdre connaissance, Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?"
+  Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour qu'ils t'interrogent ou mourrir. Et, j'ai choisi de vivre!!!".`,
   img:,
-  option:,
 }
-let souschap3_2 = {
-  subtitle:,
-  text: ``,
-  img:,
-  option:,
-}
-let alliance= {
-  subtitle:,
-  text: ``,
+let fuiteHero = {
+  subtitle: "Retour au front",
+  text: `Suite à cette trahison de Marcel. Malgus fut emmené et interrogé par ses ravisseurs, mais il ne révéla rien.
+  La troisième nuit de sa captivité, il parvient à fuir et à rentrer au camps de base des furtifs, où il raconta la trahison de Marcel.
+  Celui-ci fut jeter au cachot en attendant son sort.`,
   img:,
   option:,
 }
 let consécration = {
-  subtitle:,
-  text: ``,
+  subtitle: "Magnolia victorieuse",
+  text: `La dernière bataille s'engagea dans sa dernière ligne droite où l'armée de Magnolia et Malgus furent au bout du compte victorieux et repoussèrent l'ennemi discarien hors du royaume. 
+  Il était maintenant temps de parler de paix et d'avenir.`,
   img:,
   option:,
 }
 let paix= {
-  subtitle:,
-  text: ``,
+  subtitle: "Retour triomphale",
+  text: `Un mois passa suite à la victoire sur l'ennemi, au cours duquel l'ordre fut rétablit dans royaume ayant été ravagé par le chaos de la guerre.
+  Le traite Marcel fut condamnné à la prison à vie. Des célébrations grandioses furent organisées pour les habitants du royaume pour fêter la victoire.
+  La paix était de nouveau une réalité tangible. Mais, il restait à notre héro, un dernier choix à faire.`,
   img:,
-  option:,
 }
 let epilogue = {
-  subtitle:,
-  text: ``,
+  subtitle: "Fin heureuse",
+  text: `Une fois que les célébrations furent terminées, il était temps pour lui d'avoir une fin heureuse dans ce royaume qui était devenu le sien(sachant qu'il ne savait pas comment retourner d'où il venait à l'origine).
+  Il maria la commandante Anna des furtifs et ce fut la meilleure décision qu'il prit depuis son arrivé. Félicitation!!!`,
   img:,
-  option:,
 }
 let chaptersObj = {
 }
