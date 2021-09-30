@@ -14,8 +14,8 @@ let reveilhero = {
   lui demanda: "Qui êtes-vous et d'où venez-vous? Malgus se retourna pour découvrir une femme en armure s'adressant à lui. 
   La femme répéta la question : "Qui êtes-vous et d'où venez-vous?" `,
   img: "assets/",
-  options: [{
-    text: "Le héro lui répond", "Le héro ne dit pas la vérité"}],
+  options: [
+    text: "Le héro lui répond", "Le héro ne dit pas la vérité"],
 };
 let interrogatoiremalgus = {
   subtitle: "Amavia",
@@ -27,8 +27,7 @@ let interrogatoiremalgus = {
    Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air résolu. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant. "`,
   img: "assets/",
   options: [
-    text: [{
-      text: "Amavia décide de croire l'histoire de Malgus", "Amavia ne croit pas l'histoire de Malgus"}],
+    text: "Amavia décide de croire l'histoire de Malgus", "Amavia ne croit pas l'histoire de Malgus"],
 };
 let inquisition = {
   subtitle:"Malhonnêteté inopportune",
@@ -41,8 +40,8 @@ let inquisition = {
   Par contre, intérieurement, elle se dit : "Son histoire ne colle pas, quand on l'a retrouvé inconscient, il portait des vêtements à mi-chemin entre des vêtements normaux et d'une armure.
   Que dois faire, le croire ou non ?"`,
   img: "assets/",
-  options: [{
-    text:"Amavia décide de croire l'histoire de Malgis(Malgus)", "Amavia ne croit pas l'histoire de Malgis(Malgus)" }],
+  options: [
+    text:"Amavia décide de croire l'histoire de Malgis(Malgus)", "Amavia ne croit pas l'histoire de Malgis(Malgus)"],
 };
 let destinpositif = {
   subtitle: "Libération providentielle",
@@ -51,8 +50,8 @@ let destinpositif = {
   Elle ouvrit la porte de la cellule et dit : "Maintenant, laisser-moi vous éclairer sur la situation actuelle du royaume. 
   Ensuite, j'aurais une proposition à vous faire.".`,
   img: "assets/",
-  options:
-    text: [{"Amavia offre à Malgus d'intégrer son armée", "Amavia offre à Malgus de le ramener chez lui", "Elle ne fait rien"}],
+  options: [
+    text: "Amavia offre à Malgus d'intégrer son armée", "Amavia offre à Malgus de le ramener chez lui", "Elle ne fait rien"],
 };
 let destinnegatif = {
   subtitle: "Partie terminé",
@@ -61,8 +60,8 @@ let destinnegatif = {
   Malgis(Malgus) : "Mais, pourquoi!?" dit-il d'un ton plaintif. Amavia répondit : "Il y a des éléments qui ne marchent pas dans votre histoire, 
   notamment vos vêtements inhabituels ne correspondant pas à un marchand agricole, je suis désolé mais on va devoir vous garder plus longtemps dans votre cellule.". Malgis(Malgus) cria : "Non!!!".`, 
   img: "assets/",
-  options: [{
-    text: "La partie est terminé, veuillez recommencer une nouvelle partie!"}],
+  options: [
+    text: "La partie est terminé, veuillez recommencer une nouvelle partie!"],
 };
 let integrationarmee= {
   subtitle: "Magnolia",
@@ -72,7 +71,7 @@ let integrationarmee= {
   Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, il est temps pour vous de choisir entre 4 factions de l'armée : furtif, guerriers, tacticien ou berserker." `,
   img: "assets/",
   options: [
-    text: {"Furtif", "Guerrier", "Tacticien", "Berserker"}],
+    text: "Furtif", "Guerrier", "Tacticien", "Berserker"],
 };
 let faction1= {
   subtitle: "Les furtifs",
@@ -81,7 +80,7 @@ let faction1= {
   et modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s'appelle Anna 28 ans."`,
   img: "assets/",
   options: [
-    text:{"Choisir", "Revenir au menu des factions"}],
+    text:"Choisir", "Revenir au menu des factions"],
 };
 let faction2 = {
   subtitle: "Les guerriers",
@@ -89,8 +88,8 @@ let faction2 = {
   En choisissant cette faction, tu recevras une formation guerrière et un équipement militaire conséquent à ton choix de faction et 
   modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s"appelle Iriana 27 ans"`,
   img: "assets/",
-  options: [{
-    text:"Choisir", "Revenir au menu des factions"}],
+  options: [
+    text:"Choisir", "Revenir au menu des factions"],
 };
 let faction3 = {
   subtitle: "Les tacticiens",
@@ -100,7 +99,7 @@ let faction3 = {
   Le commandant de cette faction s'appel Victor 40 ans.".`,
   img: "assets/",
   options: [
-    text: {"Choisir", "Revenir au menu des factions"}],
+    text: "Choisir", "Revenir au menu des factions"],
 };
 let faction4 = {
   subtitle: "Les berserkers",
@@ -110,7 +109,7 @@ let faction4 = {
   et modifiable au cours de ton périple dans cett guerre. Le commandant s'appel Ivan l'audacieux 32 ans.`,
   img: "assets/",
   options: [
-    text:{"Choisir", "Revenir au menu des factions"}],
+    text:"Choisir", "Revenir au menu des factions"],
 };
 let premierscombats= {
   subtitle: "Marche vers les envahisseurs discariens",
@@ -120,16 +119,16 @@ let premierscombats= {
   il se distingua par sa bravoure, son intelligence et son travail d'équipe avec ces frères et soeurs d'arme. 
   Ces faits d'arme lui permis de gagner la confiance des autres et des alliés.`,
   img: "assets/",
-  options: [{
-    text: "La commandante Amavia et la commandante Anna deviennent tes plus proches alliées", "Malgus se fait de nombreux alliés dont les commandantes Amavia et Anna", "Malgus ne réussit qu'à avoir qu'un seul allié"}],
+  options: [
+    text: "La commandante Amavia et la commandante Anna deviennent tes plus proches alliées", "Malgus se fait de nombreux alliés dont les commandantes Amavia et Anna", "Malgus ne réussit qu'à avoir qu'un seul allié"],
 };
 let confiancemutuelle = {
   subtitle: "Frères et soeurs d'arme unis",
   text: `Par ses actes, sa bravoure, son intelligence et son travail d'équipe,
   Malgus se fit de nombreux alliés dont certaines devirent plus proche au point de développer des sentiments pour lui. 
   Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés dans sa faction allait le trahir prochainement.`,
-  options:[{
-    text: "Qui?"}],
+  options:[
+    text: "Qui?"],
   img: "assets/",
 };
 let consternation= {
@@ -148,16 +147,16 @@ let fuitehero = {
   La troisième nuit de sa captivité, il parvient à fuir et à rentrer au camps de base des furtifs, où il raconta la trahison de Marcel.
   Celui-ci fut jeter au cachot en attendant son sort.`,
   img: "assets/",
-  options:[{
-    text: "Sentence connue après la victoire", "Sentence connue après délibération", "Sentence immédiate"}],
+  options:[
+    text: "Sentence connue après la victoire", "Sentence connue après délibération", "Sentence immédiate"],
 };
 let consécration = {
   subtitle: "Magnolia victorieuse",
   text: `La dernière bataille s'engagea dans sa dernière ligne droite où l'armée de Magnolia et Malgus furent au bout du compte victorieux et repoussèrent l'ennemi discarien hors du royaume. 
   Il était maintenant temps de parler de paix et d'avenir.`,
   img: "assets/",
-  options:[{
-    text : "La vie repris son cours et Marcel fut jugé", "Marcel ne fut pas juger immédiatement après la victoire", "Marcel s'est échappé"}],
+  options:[
+    text : "La vie repris son cours et Marcel fut jugé", "Marcel ne fut pas juger immédiatement après la victoire", "Marcel s'est échappé"],
 };
 let paix = {
   subtitle: "Retour triomphale",
