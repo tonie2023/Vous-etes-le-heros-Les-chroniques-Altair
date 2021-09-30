@@ -15,7 +15,13 @@ let reveilhero = {
   La femme répéta la question : "Qui êtes-vous et d'où venez-vous?" `,
   img: "assets/",
   options: [
-    text: "Le héro lui répond", "Le héro ne dit pas la vérité"],
+    {
+      text: "Le héro lui répond"
+    },
+    {
+      text: "Le héro ne dit pas la vérité."
+    }
+  ],
 };
 let interrogatoiremalgus = {
   subtitle: "Amavia",
@@ -172,7 +178,7 @@ let epilogue = {
   Félicitation!!! Vous venez de finir le jeu, si vous voulez rejouer appuyer sur le bouton nouvelle partie.
   Je vous remercie d'avoir jouer à mon jeu!`,
   img: "assets/",
-},
+};
 let chaptersObj = {
   introduction: {
     subtitle: "Introduction du héro",
