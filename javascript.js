@@ -159,7 +159,7 @@ let consécration = {
   options:[{
     text : "La vie repris son cours et Marcel fut jugé", "Marcel ne fut pas juger immédiatement après la victoire", "Marcel s'est échappé"}],
 };
-let paix= {
+let paix = {
   subtitle: "Retour triomphale",
   text: `Un mois passa suite à la victoire sur l'ennemi, au cours duquel l'ordre fut rétablit dans royaume ayant été ravagé par le chaos de la guerre.
   Le traite Marcel fut condamnné à la prison à vie. Des célébrations grandioses furent organisées pour les habitants du royaume pour fêter la victoire.
@@ -393,9 +393,10 @@ let chaptersObj = {
   img: "assets/",
   },
 };
-function gotochapter(chapterObj){
+const chapitre = function (){
   console.log(chapterObj[chapterName].subtitle);
   console.log(chapterObj[chapterName].text);
   console.log(chapterObj[chapterName].img);
   console.log(chapterObj[chapterName].options);
 }
+chapitre(); 
