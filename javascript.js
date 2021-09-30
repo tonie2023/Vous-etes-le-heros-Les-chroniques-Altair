@@ -393,8 +393,7 @@ let chaptersObj = {
   img: "assets/",
   },
 };
-function GoToChapter(chapterName){
-  const chapitre = chapterName;
+function gotochapter(chapterObj){
   console.log(chapterObj[chapterName].subtitle);
   console.log(chapterObj[chapterName].text);
   console.log(chapterObj[chapterName].img);
