@@ -504,6 +504,6 @@ function goToChapter(chapterName) {
   console.log(chapitre.text);
 
   const boite = document.querySelector(".texte");
-  boite.innerHTML = chapter.text;
+  boite.innerHTML = chapitre.text;
   console.log(boite);
 }
