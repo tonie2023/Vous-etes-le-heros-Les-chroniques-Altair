@@ -501,7 +501,7 @@ Je vous remercie d'avoir jouer à mon jeu!`,
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   let image = document.querySelector("img");
-  image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt=""chapter_img/>`;
+  image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   let boite = document.querySelector(".texte");
   boite.innerHTML = chapitre.text;
   console.log(chapitre.subtitle);
