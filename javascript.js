@@ -502,4 +502,12 @@ function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
+
+  const boite = document.querySelector(".texte");
+  boite.innerHTML = `Bonjour aventuriers, aventurières! 
+  Mon nom est Malgus noid et j'ai 27 ans. Je suis originaire du pays Alcoria et je suis soldat dans l'armée du pays où la magie peut être utiliser par tous ces habitants et ailleurs dans le monde.
+  Mon histoire débuta lors d'une patrouille en forêt où un phénomène magique se produisit me séparant de mes hommes et me faisant perdre connaissance.
+  À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux
+  une femme en armure posa la question suivante : Qui êtes-vous ?`;
+  console.log(boite);
 }
