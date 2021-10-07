@@ -503,7 +503,7 @@ function goToChapter(chapterName) {
   let image = document.querySelector("img");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   let boite = document.querySelector(".texte");
-  boite.innerHTML = chapitre.text;
+  boite.innerText = chapitre.text;
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
   console.log(boite);
