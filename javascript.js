@@ -500,11 +500,11 @@ Je vous remercie d'avoir jouer à mon jeu!`,
 
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
-  let image = document.querySelector("img");
-  image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   let boite = document.querySelector(".texte");
   boite.innerText = chapitre.text;
+  boite.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapitre_img" />`;
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
   console.log(boite);
 }
+/*`<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;*/
