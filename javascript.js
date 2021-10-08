@@ -539,7 +539,7 @@ function goToChapter(chapterName) {
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
 
-  const actionsArr = [
+  const texteArr = [
     "Commencer",
     "Le héro lui répond",
     "Amavia décide de croire l'histoire de Malgus",
@@ -558,8 +558,10 @@ function goToChapter(chapterName) {
     "Épilogue",
   ];
   for (let index = 0; index < 16; index++) {
-    const actions = actionsArr[index];
+    const actions = texteArr[index];
   }
+
+  const actionsArr = [];
 
   let no1 = document.querySelector(".no1");
   no1.innerHTML = `<button type="button">${chaptersObj[chapterName].options[0].text}</button>`;
