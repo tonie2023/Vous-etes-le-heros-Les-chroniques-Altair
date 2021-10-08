@@ -6,6 +6,11 @@ let introduction = {
         À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux
         une femme en armure posa la question suivante : Qui êtes-vous ?`,
   img: "assets/patrouille.jpg/vortex.jpg",
+  options: [
+    {
+      text: "Commencer",
+    },
+  ],
 };
 let reveilhero = {
   subtitle: "Réveil du héro",
@@ -218,6 +223,11 @@ let consternation = {
         Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. En Avant de perdre connaissance, Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?"
         Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour qu'ils t'interrogent ou mourrir. Et, j'ai choisi de vivre!!!".`,
   img: "assets/trahison.jpg",
+  options: [
+    {
+      text: "Malgus capturé!",
+    },
+  ],
 };
 let fuitehero = {
   subtitle: "Retour au front",
@@ -260,6 +270,12 @@ let paix = {
         Le traite Marcel fut condamnné à la prison à vie. Des célébrations grandioses furent organisées pour les habitants du royaume pour fêter la victoire.
         La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pour Malgus.`,
   img: "assets/paix.jpg",
+  options: [
+    {
+      text: "Épilogue",
+      action: "goToChapter(`epilogue`)",
+    },
+  ],
 };
 let epilogue = {
   subtitle: "Fin heureuse",
@@ -278,6 +294,12 @@ Mon histoire débuta lors d'une patrouille en forêt où un phénomène magique 
 À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux
 une femme en armure posa la question suivante : Qui êtes-vous ?`,
     img: "assets/vortex.jpg",
+    options: [
+      {
+        text: "Commencer",
+        action: "goToChapter(`reveil_hero`)",
+      },
+    ],
   },
   reveil_hero: {
     subtitle: "Réveil du héro",
@@ -454,6 +476,12 @@ Pendant, la bataille Malgus et Marcel se retrouvèrent séparer des autres. Malg
 Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. En Avant de perdre connaissance, Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?"
 Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour qu'ils t'interrogent ou mourrir. Et, j'ai choisi de vivre!!!".`,
     img: "assets/trahison.jpg",
+    options: [
+      {
+        text: "Malgus capturé!",
+        action: "goToChapter(`fuite_hero`)",
+      },
+    ],
   },
   fuite_hero: {
     subtitle: "Retour au front",
@@ -464,7 +492,7 @@ Celui-ci fut jeter au cachot en attendant son sort.`,
     options: [
       {
         text: "Sentence connue après la victoire",
-        action: "goToChapter(`consécration`)",
+        action: "goToChapter(`consecration`)",
       },
     ],
   },
@@ -486,6 +514,12 @@ Il était maintenant temps de parler de paix et d'avenir.`,
 Le traite Marcel fut condamnné à la prison à vie. Des célébrations grandioses furent organisées pour les habitants du royaume pour fêter la victoire.
 La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pour Malgus.`,
     img: "assets/paix.jpg",
+    options: [
+      {
+        text: "Épilogue",
+        action: "goToChapter(`epilogue)",
+      },
+    ],
   },
   epilogue: {
     subtitle: "Fin heureuse",
@@ -504,6 +538,44 @@ function goToChapter(chapterName) {
   boite.innerText = chapitre.text;
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
+
+  const actionsArr = [
+    "Commencer",
+    "Le héro lui répond",
+    "Amavia décide de croire l'histoire de Malgus",
+    "Amavia ne croit pas l'histoire de Malgis(Malgus)",
+    "Amavia offre à Malgus d'intégrer son armée",
+    "La partie est terminé, veuillez recommencer une nouvelle partie!",
+    "Choisir",
+    "Revenir au menu des factions",
+    "Revenir au menu des factions",
+    "Revenir au menu des factions",
+    "Malgus se fait de nombreux alliés dont les commandantes Amavia et Anna",
+    "Qui?",
+    "Malgus capturé!",
+    "Sentence connue après la victoire",
+    "La vie repris son cours et Marcel fut jugé",
+    "Épilogue",
+  ];
+  for (let index = 0; index < 16; index++) {
+    const actions = actionsArr[index];
+  }
+
+  let no1 = document.querySelector(".no1");
+  no1.innerHTML = `<button type="button">${chaptersObj[chapterName].options[0].text}</button>`;
+  let no2 = document.querySelector(".no2");
+  no2.innerHTML = `<button type="button">${chaptersObj[chapterName].options[0].text}</button>`;
+  let no3 = document.querySelector(".no3");
+  no3.innerHTML = `<button type="button">${chaptersObj[chapterName].options[0].text}</button>`;
+  no1.onclick = function btn1() {
+    chaptersObj[chapterName].action;
+  };
+  no2.onclick = function btn2() {
+    chaptersObj[chapterName].action;
+  };
+  no3.onclick = function btn3() {
+    chaptersObj[chapterName].action;
+  };
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
   console.log(boite);
