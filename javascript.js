@@ -273,7 +273,6 @@ let paix = {
   options: [
     {
       text: "Épilogue",
-      action: "goToChapter(`epilogue`)",
     },
   ],
 };
@@ -284,6 +283,11 @@ let epilogue = {
         Félicitation!!! Vous venez de finir le jeu, si vous voulez rejouer appuyer sur le bouton nouvelle partie.
         Je vous remercie d'avoir jouer à mon jeu!`,
   img: "assets/finheureuse.jpg",
+  options: [
+    {
+      text: "Nouvelle partie?",
+    },
+  ],
 };
 let chaptersObj = {
   introduction: {
@@ -517,7 +521,7 @@ La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pou
     options: [
       {
         text: "Épilogue",
-        action: "goToChapter(`epilogue)",
+        action: "goToChapter(`epilogue`)",
       },
     ],
   },
@@ -529,6 +533,12 @@ Il maria la commandante Anna des furtifs et ce fut la meilleure décision qu'il 
 Félicitation!!! Vous venez de finir le jeu, si vous voulez rejouer appuyer sur le bouton nouvelle partie.
 Je vous remercie d'avoir jouer à mon jeu!`,
     img: "assets/finheureuse.jpg",
+    options: [
+      {
+        text: "Nouvelle partie?",
+        action: "goToChapter(`introduction`)",
+      },
+    ],
   },
 };
 
@@ -556,13 +566,34 @@ function goToChapter(chapterName) {
     "Sentence connue après la victoire",
     "La vie repris son cours et Marcel fut jugé",
     "Épilogue",
+    "Nouvelle partie?",
   ];
-  for (let index = 0; index < 16; index++) {
-    const actions = texteArr[index];
+  for (let index = 0; index < texteArr.length; index++) {
+    const textes = texteArr[index];
   }
 
-  const actionsArr = [];
-
+  const actionsArr = [
+    "goToChapter(`reveil_hero`)",
+    "goToChapter(`interrogatoire_malgus`)",
+    "goToChapter(`destin_positif`)",
+    "goToChapter(`destin_negatif`)",
+    "goToChapter(`integration_armee`)",
+    "goToChapter(`introduction`)",
+    "goToChapter(`premiers_combats`)",
+    "goToChapter(`integration_armee`)",
+    "goToChapter(`integration_armee`)",
+    "goToChapter(`integration_armee`)",
+    "goToChapter(`confiance_mutuelle`)",
+    "goToChapter(`consternation`)",
+    "goToChapter(`fuite_hero`)",
+    "goToChapter(`consecration`)",
+    "goToChapter(`paix`)",
+    "goToChapter(`epilogue`)",
+    "goToChapter(`introduction`)",
+  ];
+  for (let index = 0; index < actionsArr.length; index++) {
+    const actions = actionsArr[index];
+  }
   let no1 = document.querySelector(".no1");
   no1.innerHTML = `<button type="button">${chaptersObj[chapterName].options[0].text}</button>`;
   let no2 = document.querySelector(".no2");
