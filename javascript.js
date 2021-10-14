@@ -546,70 +546,19 @@ function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   let boite = document.querySelector(".texte");
   boite.innerText = chapitre.text;
+  let sousTitre = document.querySelector(".subtitle");
+  sousTitre.innerText = chapitre.subtitle;
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
 
-  const texteArr = [
-    "Commencer",
-    "Le héro lui répond",
-    "Amavia décide de croire l'histoire de Malgus",
-    "Amavia ne croit pas l'histoire de Malgis(Malgus)",
-    "Amavia offre à Malgus d'intégrer son armée",
-    "La partie est terminé, veuillez recommencer une nouvelle partie!",
-    "Choisir",
-    "Revenir au menu des factions",
-    "Revenir au menu des factions",
-    "Revenir au menu des factions",
-    "Malgus se fait de nombreux alliés dont les commandantes Amavia et Anna",
-    "Qui?",
-    "Malgus capturé!",
-    "Sentence connue après la victoire",
-    "La vie repris son cours et Marcel fut jugé",
-    "Épilogue",
-    "Nouvelle partie?",
-  ];
-  for (let index = 0; index < texteArr.length; index++) {
-    const textes = texteArr[index];
-  }
-
-  const actionsArr = [
-    "goToChapter(`reveil_hero`)",
-    "goToChapter(`interrogatoire_malgus`)",
-    "goToChapter(`destin_positif`)",
-    "goToChapter(`destin_negatif`)",
-    "goToChapter(`integration_armee`)",
-    "goToChapter(`introduction`)",
-    "goToChapter(`premiers_combats`)",
-    "goToChapter(`integration_armee`)",
-    "goToChapter(`integration_armee`)",
-    "goToChapter(`integration_armee`)",
-    "goToChapter(`confiance_mutuelle`)",
-    "goToChapter(`consternation`)",
-    "goToChapter(`fuite_hero`)",
-    "goToChapter(`consecration`)",
-    "goToChapter(`paix`)",
-    "goToChapter(`epilogue`)",
-    "goToChapter(`introduction`)",
-  ];
-  for (let index = 0; index < actionsArr.length; index++) {
-    const actions = actionsArr[index];
-  }
-  let no1 = document.querySelector(".no1");
-  no1.innerHTML = `<button type="button">${chaptersObj[chapterName].options[0].text}</button>`;
-  let no2 = document.querySelector(".no2");
-  no2.innerHTML = `<button type="button">${chaptersObj[chapterName].options[0].text}</button>`;
-  let no3 = document.querySelector(".no3");
-  no3.innerHTML = `<button type="button">${chaptersObj[chapterName].options[0].text}</button>`;
-  no1.onclick = function btn1() {
-    chaptersObj[chapterName].action;
-  };
-  no2.onclick = function btn2() {
-    chaptersObj[chapterName].action;
-  };
-  no3.onclick = function btn3() {
-    chaptersObj[chapterName].action;
-  };
+  let buttons = document.querySelector('.bouton');
+  let text = "";
+  chapitre.options.forEach(function(opt){
+    text += `<button class="no1" onclick="${opt.action}">${opt.text}</button>`;
+  })
+  buttons.innerHTML = text;
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
   console.log(boite);
 }
+goToChapter('introduction');
