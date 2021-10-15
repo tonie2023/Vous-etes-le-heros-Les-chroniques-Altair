@@ -551,14 +551,14 @@ function goToChapter(chapterName) {
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
 
-  let buttons = document.querySelector('.bouton');
+  let buttons = document.querySelector(".bouton");
   let text = "";
-  chapitre.options.forEach(function(opt){
+  chapitre.options.forEach(function (opt) {
     text += `<button class="no1" onclick="${opt.action}">${opt.text}</button>`;
-  })
+  });
   buttons.innerHTML = text;
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
   console.log(boite);
 }
-goToChapter('introduction');
+goToChapter("introduction");
