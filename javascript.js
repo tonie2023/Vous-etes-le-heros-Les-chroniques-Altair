@@ -388,6 +388,12 @@ notamment vos vêtements inhabituels ne correspondant pas à un marchand agricol
 et que le royaume risquait depuis peu la défaite face à ces envahisseurs discariens. Elle finit en disant : "Voilà, la situation actuelle. est-ce que vous avez des questions ?"
 Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, il est temps pour vous de choisir entre 4 factions de l'armée : furtif, guerriers, tacticien ou berserker." `,
     img: "assets/histoire.jpg",
+    options: [
+      {
+        text: "Il est temps de choisir votre faction dans l'armée royale!",
+        action: "goToChapter(`faction_1`)",
+      },
+    ],
   },
   faction_1: {
     subtitle: "Les furtifs",
