@@ -24,7 +24,7 @@ let reveilhero = {
       text: "Le héro lui répond",
     },
     {
-      text: "Le héro ne dit pas la vérité.",
+      text: " Le héro lui ment",
     },
   ],
 };
@@ -59,10 +59,10 @@ let inquisition = {
   img: "assets/mensonge.jpg",
   options: [
     {
-      text: "Amavia décide de croire l'histoire de Malgis(Malgus)",
+      text: "Amavia décide de croire Malgis(Malgus)",
     },
     {
-      text: "Amavia ne croit pas l'histoire de Malgis(Malgus)",
+      text: "Amavia ne croit pas Malgis(Malgus)",
     },
   ],
 };
