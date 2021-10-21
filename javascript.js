@@ -317,6 +317,10 @@ La femme répéta la question : "Qui êtes-vous et d'où venez-vous?" `,
         text: "Le héro lui répond",
         action: "goToChapter(`interrogatoire_malgus`)",
       },
+      {
+        text: "Le héro lui ment",
+        action: "goToChapter(`inquisition`)",
+      },
     ],
   },
   interrogatoire_malgus: {
