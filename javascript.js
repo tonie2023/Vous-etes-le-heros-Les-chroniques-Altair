@@ -509,7 +509,7 @@ Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour 
     options: [
       {
         text: "Malgus capturé!",
-        action: "goToChapter(`fuite_hero`)",
+        action: "decision()",
       },
     ],
   },
@@ -568,6 +568,10 @@ Je vous remercie d'avoir jouer à mon jeu!`,
   },
 };
 let finalChoice = 0;
+function decision(){
+  finalChoice = 1;
+  goToChapter(`fuite_hero`);
+}
 (inquisition1 = function () {
   inquisition++;
   goToChapter(`destin_negatif`);
