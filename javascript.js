@@ -348,11 +348,11 @@ Que dois faire, le croire ou non ?"`,
     img: "assets/mensonge.jpg",
     options: [
       {
-        text: "Amavia ne croit pas l'histoire de Malgis(Malgus)",
+        text: "Amavia ne croit pas Malgis(Malgus)",
         action: "inquisition1()",
       },
       {
-        text: "Amavia décide de croire l'histoire de Malgis(Malgus)",
+        text: "Amavia décide de croire Malgis(Malgus)",
         action: "inquisition2()",
       },
     ],
