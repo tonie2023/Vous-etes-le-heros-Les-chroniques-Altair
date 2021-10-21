@@ -58,11 +58,6 @@ let inquisition = {
         Que dois faire, le croire ou non ?"`,
   img: "assets/mensonge.jpg",
   options: [
-    let malgis = 0;
-    (inquisition = function (){
-      inquisition++;
-      goToChapter(``)
-    })
     {
       text: "Amavia décide de croire l'histoire de Malgis(Malgus)",
     },
@@ -354,7 +349,11 @@ Que dois faire, le croire ou non ?"`,
     options: [
       {
         text: "Amavia ne croit pas l'histoire de Malgis(Malgus)",
-        action: "goToChapter(`destin_negatif`)",
+        action: "inquisition1()",
+      },
+      {
+        text: "Amavia décide de croire l'histoire de Malgis(Malgus)",
+        action: "inquisition2()",
       },
     ],
   },
@@ -564,7 +563,23 @@ Je vous remercie d'avoir jouer à mon jeu!`,
     ],
   },
 };
-
+let finalChoice = 0;
+(inquisition1 = function () {
+  inquisition++;
+  goToChapter(`destin_negatif`);
+}),
+  (inquisition2 = function () {
+    inquisition++;
+    goToChapter(`destin_positif`);
+  })(
+    (inquisition2 = function () {
+      if (finalChoice == true) {
+        goToChapter(`destin_negatif`);
+      } else {
+        goToChapter(`destin_positif`);
+      }
+    })
+  );
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   let boite = document.querySelector(".texte");
