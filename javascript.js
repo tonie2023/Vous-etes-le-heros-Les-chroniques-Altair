@@ -390,8 +390,20 @@ Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, i
     img: "assets/histoirejeu.jpg",
     options: [
       {
-        text: "Il est temps de choisir votre faction dans l'armée royale!",
+        text: "Les furtifs",
         action: "goToChapter(`faction_1`)",
+      },
+      {
+        text: "Les guerriers",
+        action: "goToChapter(`faction_2`)",
+      },
+      {
+        text: "Les tacticiens",
+        action: "goToChapter(`faction_3`)",
+      },
+      {
+        text: "Les beserkers",
+        action: "goToChapter(`faction_4`)",
       },
     ],
   },
@@ -559,6 +571,11 @@ function goToChapter(chapterName) {
 
   let buttons = document.querySelector(".bouton");
   let text = "";
+  /*for (
+    let index = 0;
+    index < chaptersObj[chapterName].options[index].action;
+    index++
+  )*/
   chapitre.options.forEach(function (opt) {
     text += `<button class="no1" onclick="${opt.action}">${opt.text}</button>`;
   });
