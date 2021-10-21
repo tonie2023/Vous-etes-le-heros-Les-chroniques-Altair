@@ -58,6 +58,11 @@ let inquisition = {
         Que dois faire, le croire ou non ?"`,
   img: "assets/mensonge.jpg",
   options: [
+    let malgis = 0;
+    (inquisition = function (){
+      inquisition++;
+      goToChapter(``)
+    })
     {
       text: "Amavia décide de croire l'histoire de Malgis(Malgus)",
     },
@@ -568,15 +573,13 @@ function goToChapter(chapterName) {
   sousTitre.innerText = chapitre.subtitle;
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
-
   let buttons = document.querySelector(".bouton");
+
   let text = "";
-  /*for (
-    let index = 0;
-    index < chaptersObj[chapterName].options[index].action;
-    index++
-  )*/
   chapitre.options.forEach(function (opt) {
+    let index = 0;
+    index < chaptersObj[chapterName].options.length;
+    index++;
     text += `<button class="no1" onclick="${opt.action}">${opt.text}</button>`;
   });
   buttons.innerHTML = text;
