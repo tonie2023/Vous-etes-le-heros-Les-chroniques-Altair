@@ -578,9 +578,9 @@ function decision() {
 }
 decision = function () {
   if (finalChoice == true) {
-    goToChapter(`destin_negatif`);
+    goToChapter(`fuite_hero`);
   } else {
-    goToChapter(`destin_positif`);
+    goToChapter(`destin_negatif`);
   }
 };
 function goToChapter(chapterName) {
