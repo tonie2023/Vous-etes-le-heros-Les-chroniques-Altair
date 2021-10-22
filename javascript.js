@@ -220,20 +220,23 @@ let consternation = {
         Au cours de cette série de victoire, Malgus se rapprocha des commandantes Amavia et Anna, se fit des amis 
         dont Marcel qui avait un comportement étrange depuis quelque temps. Sachant que la victoire finale était proche, l'armée de Magnolia lança le dernier assaut contre les discariens.
         Pendant, la bataille Malgus et Marcel se retrouvèrent séparer des autres. Malgus dit :"Ne perd pas espoir, nous allons nous en sortir et rejoindre les autres."
-        Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. En Avant de perdre connaissance, Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?"
+        Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. Et, en tombant à terre, Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?"
         Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour qu'ils t'interrogent ou mourrir. Et, j'ai choisi de vivre!!!".`,
   img: "assets/trahison.jpg",
   options: [
     {
       text: "Malgus capturé!",
     },
+    {
+      text: "Malgus revient à lui et s'échappe!",
+    },
   ],
 };
 let fuitehero = {
   subtitle: "Retour au front",
-  text: `Suite à cette trahison de Marcel. Malgus fut emmené et interrogé par ses ravisseurs, mais il ne révéla rien.
-        La troisième nuit de sa captivité, il parvient à fuir et à rentrer au camps de base des furtifs, où il raconta la trahison de Marcel.
-        Celui-ci fut jeter au cachot en attendant son sort.`,
+  text: `Suite à cette trahison de Marcel. Malgus était sur le point d'être capturé, mais il parvient à fuir 
+        et à rentrer au camps de base des furtifs, où il raconta la trahison de Marcel.
+        Celui-ci fut jeter au cachot en attendant son sort. `,
   img: "assets/évasion.jpg",
   options: [
     {
@@ -507,7 +510,7 @@ Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne s
 Au cours de cette série de victoire, Malgus se rapprocha des commandantes Amavia et Anna, se fit des amis 
 dont Marcel qui avait un comportement étrange depuis quelque temps. Sachant que la victoire finale était proche, l'armée de Magnolia lança le dernier assaut contre les discariens.
 Pendant, la bataille Malgus et Marcel se retrouvèrent séparer des autres. Malgus dit :"Ne perd pas espoir, nous allons nous en sortir et rejoindre les autres."
-Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. En Avant de perdre connaissance, Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?"
+Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. Et, en tombant à terre Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?"
 Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour qu'ils t'interrogent ou mourrir. Et, j'ai choisi de vivre!!!".`,
     img: "assets/trahison.jpg",
     options: [
@@ -515,13 +518,17 @@ Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour 
         text: "Malgus capturé!",
         action: "decision()",
       },
+      {
+        text: "Est-ce que Malgus parvient à s'échapper ?",
+        action: "decision1()",
+      },
     ],
   },
   fuite_hero: {
     subtitle: "Retour au front",
-    text: `Suite à cette trahison de Marcel. Malgus fut emmené et interrogé par ses ravisseurs, mais il ne révéla rien.
-La troisième nuit de sa captivité, il parvient à fuir et à rentrer au camps de base des furtifs, où il raconta la trahison de Marcel.
-Celui-ci fut jeter au cachot en attendant son sort.`,
+    text: `Suite à cette trahison de Marcel. Malgus était sur le point d'être capturé, mais il parvient à fuir 
+et à rentrer au camps de base des furtifs, où il raconta la trahison de Marcel.
+Celui-ci fut jeter au cachot en attendant son sort. `,
     img: "assets/évasion.jpg",
     options: [
       {
@@ -583,6 +590,15 @@ decision = function () {
     goToChapter(`destin_negatif`);
   }
 };
+let finalChoice2 = 0;
+function decision1() {
+  finalChoice2 = 1;
+  if (finalChoice2 == false) {
+    goToChapter(`destin_negatif`);
+  } else {
+    goToChapter(`fuite_hero`);
+  }
+}
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   let boite = document.querySelector(".texte");
