@@ -87,10 +87,9 @@ let destinpositif = {
 };
 let destinnegatif = {
   subtitle: "Partie terminé",
-  text: `Notre héro en cellule attendait la réponse de la commandante Amavia avec nervosité. 
-        Après 5 minutes de réflexion, elle donna sa décision : "Malgus, après ce que vous venez de me révéler sur vous, j'ai pesé le pour et le contre et je ne vous crois pas.".
-        Malgis(Malgus) : "Mais, pourquoi!?" dit-il d'un ton plaintif. Amavia répondit : "Il y a des éléments qui ne marchent pas dans votre histoire, 
-        notamment vos vêtements inhabituels ne correspondant pas à un marchand agricole, je suis désolé mais on va devoir vous garder plus longtemps dans votre cellule.". Malgis(Malgus) cria : "Non!!!".`,
+  text: `Chers aventuriers et aventurières des Chroniques d'Altaïr
+        vous venez de prendre une décision qui a eu des conséquences négatives pour notre héro.
+        Le héro est soit capturé ou mort. PARTIE TERMINÉ!!!`,
   img: "assets/gameover.jpg",
   options: [
     {
@@ -210,7 +209,7 @@ let confiancemutuelle = {
   img: "assets/allié.jpg",
   options: [
     {
-      text: "Qui?",
+      text: "Qui est le traître?",
     },
   ],
 };
@@ -380,10 +379,9 @@ Ensuite, j'aurais une proposition à vous faire.".`,
   },
   destin_negatif: {
     subtitle: "Partie terminé",
-    text: `Notre héro en cellule attendait la réponse de la commandante Amavia avec nervosité. 
-Après 5 minutes de réflexion, elle donna sa décision : "Malgus, après ce que vous venez de me révéler sur vous, j'ai pesé le pour et le contre et je ne vous crois pas.".
-Malgis(Malgus) : "Mais, pourquoi!?" dit-il d'un ton plaintif. Amavia répondit : "Il y a des éléments qui ne marchent pas dans votre histoire, 
-notamment vos vêtements inhabituels ne correspondant pas à un marchand agricole, je suis désolé mais on va devoir vous garder plus longtemps dans votre cellule.". Malgis(Malgus) cria : "Non!!!".`,
+    text: `Chers aventuriers et aventurières des Chroniques d'Altaïr
+vous venez de prendre une décision qui a eu des conséquences négatives pour notre héro. 
+Le héro est soit capturé ou mort. PARTIE TERMINÉ!!!`,
     img: "assets/gameover.jpg",
     options: [
       {
@@ -499,7 +497,7 @@ Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne s
     img: "assets/allié.jpg",
     options: [
       {
-        text: "Qui?",
+        text: "Qui est le traître?",
         action: "goToChapter(`consternation`)",
       },
     ],

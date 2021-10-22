@@ -32,8 +32,9 @@ img {
 }
 img {
   position: relative;
-  bottom: 10px;
+  bottom: 13px;
   margin: auto;
+  border-radius: 15px 15px 15px 15px;
   min-width: 400px;
   height: 300px;
 }
@@ -67,7 +68,7 @@ h2 {
 h2 {
   align-self: center;
   font-family: lato, sans-serif;
-  color: #c5d5e4;
+  color: #39a0ed;
 }
 .flex,
 h1,
