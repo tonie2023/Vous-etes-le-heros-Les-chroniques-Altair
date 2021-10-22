@@ -228,7 +228,7 @@ let consternation = {
       text: "Malgus capturé!",
     },
     {
-      text: "Malgus revient à lui et s'échappe!",
+      text: "Est-ce que Malgus parvient à s'échapper ?",
     },
   ],
 };
@@ -240,10 +240,10 @@ let fuitehero = {
   img: "assets/évasion.jpg",
   options: [
     {
-      text: "Sentence connue après la victoire",
+      text: "Poursuite des derniers combats pour la victoire finale",
     },
     {
-      text: "Sentence connue après délibération",
+      text: "Sentence connue après la victoire finale",
     },
     {
       text: "Sentence immédiate",
@@ -356,11 +356,11 @@ Que dois faire, le croire ou non ?"`,
     options: [
       {
         text: "Amavia ne croit pas Malgis(Malgus)",
-        action: "goToChapter(`destin_negatif`)",
+        action: "decision3()",
       },
       {
         text: "Amavia décide de croire Malgis(Malgus)",
-        action: "goToChapter(`destin_positif`)",
+        action: "decision4()",
       },
     ],
   },
@@ -532,7 +532,7 @@ Celui-ci fut jeter au cachot en attendant son sort. `,
     img: "assets/évasion.jpg",
     options: [
       {
-        text: "Sentence connue après la victoire",
+        text: "Poursuite des derniers combats pour la victoire finale",
         action: "goToChapter(`consecration`)",
       },
     ],
@@ -597,6 +597,24 @@ function decision1() {
     goToChapter(`destin_negatif`);
   } else {
     goToChapter(`fuite_hero`);
+  }
+}
+let finalChoice3 = 0;
+function decision3() {
+  finalChoice3 = 1;
+  if (finalChoice3 == true) {
+    goToChapter(`destin_negatif`);
+  } else {
+    goToChapter(`destin_positif`);
+  }
+}
+let finalChoice4 = 0;
+function decision4() {
+  finalChoice4 = 1;
+  if (finalChoice4 == true) {
+    goToChapter(`destin_positif`);
+  } else {
+    goToChapter(`destin_negatif`);
   }
 }
 function goToChapter(chapterName) {
