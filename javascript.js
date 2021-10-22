@@ -206,7 +206,7 @@ let confiancemutuelle = {
   subtitle: "Frères et soeurs d'arme unis",
   text: `Par ses actes, sa bravoure, son intelligence et son travail d'équipe,
         Malgus se fit de nombreux alliés dont certaines devirent plus proche au point de développer des sentiments pour lui. 
-        Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés dans sa faction allait le trahir prochainement.`,
+        Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés dans sa faction avait un secret potentiellement lourds de conséquences pour notre héro.`,
   img: "assets/allié.jpg",
   options: [
     {
@@ -353,11 +353,11 @@ Que dois faire, le croire ou non ?"`,
     options: [
       {
         text: "Amavia ne croit pas Malgis(Malgus)",
-        action: "inquisition1()",
+        action: "goToChapter(`destin_negatif`)",
       },
       {
         text: "Amavia décide de croire Malgis(Malgus)",
-        action: "inquisition2()",
+        action: "goToChapter(`destin_positif`)",
       },
     ],
   },
@@ -410,7 +410,7 @@ Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, i
         action: "goToChapter(`faction_3`)",
       },
       {
-        text: "Les beserkers",
+        text: "Les berserkers",
         action: "goToChapter(`faction_4`)",
       },
     ],
@@ -425,6 +425,10 @@ et modifiable au cours de ton périple dans cette guerre. La commandante de cett
       {
         text: "Choisir",
         action: "goToChapter(`premiers_combats`)",
+      },
+      {
+        text: "Revenir au menu des factions",
+        action: "goToChapter(`integration_armee`)",
       },
     ],
   },
@@ -488,7 +492,7 @@ Ces faits d'arme lui permis de gagner la confiance des autres et des alliés.`,
     subtitle: "Frères et soeurs d'arme unis",
     text: `Par ses actes, sa bravoure, son intelligence et son travail d'équipe,
 Malgus se fit de nombreux alliés dont certaines devirent plus proche au point de développer des sentiments pour lui. 
-Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés dans sa faction allait le trahir prochainement.`,
+Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés dans sa faction avait un secret potentiellement lourds de conséquences pour notre héro.`,
     img: "assets/allié.jpg",
     options: [
       {
@@ -568,26 +572,17 @@ Je vous remercie d'avoir jouer à mon jeu!`,
   },
 };
 let finalChoice = 0;
-function decision(){
+function decision() {
   finalChoice = 1;
   goToChapter(`fuite_hero`);
 }
-(inquisition1 = function () {
-  inquisition++;
-  goToChapter(`destin_negatif`);
-}),
-  (inquisition2 = function () {
-    inquisition++;
+decision = function () {
+  if (finalChoice == true) {
+    goToChapter(`destin_negatif`);
+  } else {
     goToChapter(`destin_positif`);
-  })(
-    (inquisition2 = function () {
-      if (finalChoice == true) {
-        goToChapter(`destin_negatif`);
-      } else {
-        goToChapter(`destin_positif`);
-      }
-    })
-  );
+  }
+};
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   let boite = document.querySelector(".texte");
