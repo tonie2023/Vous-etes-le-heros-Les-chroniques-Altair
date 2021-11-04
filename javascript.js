@@ -271,6 +271,7 @@ let paix = {
   text: `Un mois passa suite à la victoire sur l'ennemi, au cours duquel l'ordre fut rétablit dans royaume ayant été ravagé par le chaos de la guerre.
         Le traite Marcel fut condamnné à la prison à vie. Des célébrations grandioses furent organisées pour les habitants du royaume pour fêter la victoire.
         La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pour Malgus.`,
+  video: /*"winner.webp"*/,      
   img: "assets/paix.jpg",
   options: [
     {
@@ -625,6 +626,7 @@ function goToChapter(chapterName) {
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   let buttons = document.querySelector(".bouton");
 
+  video.innerHTML = /*chapitre.video;*/
   let text = "";
   chapitre.options.forEach(function (opt) {
     let index = 0;
