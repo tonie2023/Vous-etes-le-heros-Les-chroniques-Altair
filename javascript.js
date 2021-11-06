@@ -347,7 +347,11 @@ function goToChapter(chapterName) {
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   let buttons = document.querySelector(".bouton");
-
+  if (chaptersObj[chapterName].video == true) {
+    image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
+  } else {
+    image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
+  }
   let text = "";
   chapitre.options.forEach(function (opt) {
     let index = 0;
@@ -355,9 +359,7 @@ function goToChapter(chapterName) {
     index++;
     text += `<button class="no1" onclick="${opt.action}">${opt.text}</button>`;
   });
-
   buttons.innerHTML = text;
-
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
 }
