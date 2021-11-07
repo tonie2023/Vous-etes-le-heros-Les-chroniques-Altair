@@ -346,12 +346,14 @@ function goToChapter(chapterName) {
   sousTitre.innerText = chapitre.subtitle;
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
+  let video = document.querySelector(".video");
   let buttons = document.querySelector(".bouton");
-  if (chaptersObj[chapterName].video == true) {
-    image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
+
+  if (chapitre.video == true) {
+    video.play();
   } else {
-    image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   }
+
   let text = "";
   chapitre.options.forEach(function (opt) {
     let index = 0;
