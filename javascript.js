@@ -337,7 +337,6 @@ function decision4() {
     goToChapter(`destin_negatif`);
   }
 }
-
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   let boite = document.querySelector(".texte");
@@ -350,7 +349,6 @@ function goToChapter(chapterName) {
   let buttons = document.querySelector(".bouton");
 
   if (chapitre.video == true) {
-    video.play();
   } else {
   }
 
