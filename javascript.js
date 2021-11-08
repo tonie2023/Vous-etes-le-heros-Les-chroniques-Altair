@@ -105,6 +105,7 @@ Le héro est soit capturé ou mort. PARTIE TERMINÉ!!!`,
  Une race hybride mi-homme mi-féline. Elle expliqua également que cela fait 10 ans que la guerre a commencé et que les armées de Magnolia perdaient du terrain
 et que le royaume risquait depuis peu la défaite face à ces envahisseurs discariens. Elle finit en disant : "Voilà, la situation actuelle. est-ce que vous avez des questions ?"
 Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, il est temps pour vous de choisir entre 4 factions de l'armée : furtif, guerriers, tacticien ou berserker." `,
+    video: "assets/choices.mp4",
     img: "assets/histoirejeu.jpg",
     options: [
       {
