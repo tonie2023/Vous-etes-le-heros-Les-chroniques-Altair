@@ -39,7 +39,11 @@ img {
   height: 300px;
 }
 .video {
-  width: 400px;
+  position: relative;
+  bottom: 13px;
+  margin: auto;
+  border-radius: 15px 15px 15px 15px;
+  min-width: 400px;
   height: 300px;
 }
 .titre {

@@ -349,7 +349,7 @@ function goToChapter(chapterName) {
   let video = document.querySelector(".video");
   image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
   if (chaptersObj[chapterName].video) {
-    image.innerHTML = `<video src="${chaptersObj[chapterName].video}" loop autoplay muted alt="chapter_video"/>`;
+    image.innerHTML = `<video class="video" src="${chaptersObj[chapterName].video}" loop autoplay muted alt="chapter_video"/>`;
   } else {
     image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   }
