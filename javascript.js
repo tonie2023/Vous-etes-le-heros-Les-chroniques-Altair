@@ -345,13 +345,15 @@ function goToChapter(chapterName) {
   sousTitre.innerText = chapitre.subtitle;
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
-  let video = document.querySelector(".video");
   let buttons = document.querySelector(".bouton");
-
-  if (chapitre.video == true) {
+  let video = document.querySelector(".video");
+  image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
+  if (chaptersObj[chapterName].video) {
+    image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
   } else {
+    image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   }
-
+  console.log(chaptersObj[chapterName].video);
   let text = "";
   chapitre.options.forEach(function (opt) {
     let index = 0;
@@ -363,5 +365,4 @@ function goToChapter(chapterName) {
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
 }
-
 goToChapter("introduction");
