@@ -351,6 +351,7 @@ function goToChapter(chapterName) {
   buttons.addEventListener("click", function () {
     audio.play();
   });
+  console.log(audio);
   let video = document.querySelector(".video");
   image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
   if (chaptersObj[chapterName].video) {
