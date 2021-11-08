@@ -347,6 +347,10 @@ function goToChapter(chapterName) {
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   let buttons = document.querySelector(".bouton");
+  let audio = new Audio("assets/boingCartoon7.mp3");
+  buttons.addEventListener("click", function () {
+    audio.play();
+  });
   let video = document.querySelector(".video");
   image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
   if (chaptersObj[chapterName].video) {
