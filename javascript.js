@@ -338,6 +338,9 @@ function decision4() {
     goToChapter(`destin_negatif`);
   }
 }
+
+let audio = new Audio("assets/sourisSimpleClic.mp3");
+
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   let boite = document.querySelector(".texte");
@@ -347,9 +350,9 @@ function goToChapter(chapterName) {
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   let buttons = document.querySelector(".bouton");
-  let audio = new Audio("assets/boingCartoon7.mp3");
   buttons.addEventListener("click", function () {
     audio.play();
+    goToChapter();
   });
   console.log(audio);
   let video = document.querySelector(".video");
@@ -370,5 +373,6 @@ function goToChapter(chapterName) {
   buttons.innerHTML = text;
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
+  console.log(audio);
 }
 goToChapter("introduction");
