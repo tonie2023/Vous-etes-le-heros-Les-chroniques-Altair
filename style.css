@@ -38,6 +38,10 @@ img {
   min-width: 400px;
   height: 300px;
 }
+.video {
+  width: 400px;
+  height: 300px;
+}
 .titre {
   display: flex;
 }

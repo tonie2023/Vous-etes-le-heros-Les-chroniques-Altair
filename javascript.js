@@ -6,7 +6,7 @@ Mon nom est Malgus noid et j'ai 27 ans. Je suis originaire du pays Alcoria et je
 Mon histoire débuta lors d'une patrouille en forêt où un phénomène magique se produisit me séparant de mes hommes et me faisant perdre connaissance.
 À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux
 une femme en armure posa la question suivante : Qui êtes-vous ?`,
-    video: "assets/introductionPlayer.webp",
+    video: "assets/introductionPlayer.mp4",
     img: "assets/vortex.jpg",
     options: [
       {
@@ -90,7 +90,7 @@ Ensuite, j'aurais une proposition à vous faire.".`,
     text: `Chers aventuriers et aventurières des Chroniques d'Altaïr
 vous venez de prendre une décision qui a eu des conséquences négatives pour notre héro. 
 Le héro est soit capturé ou mort. PARTIE TERMINÉ!!!`,
-    video: "assets/gameover.webp",
+    video: "assets/gameover.mp4",
     img: "assets/gameover.jpg",
     options: [
       {
@@ -130,7 +130,7 @@ Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, i
     text: `Amavia fit la description de cette faction : "Les furtifs sont des soldats qui ont appris des méthodes permettant de mettre hors d'état de nuire ou de tuer leurs adversaires discariens.
 En choisissant cette faction, tu apprendras alors les techniques de combats et les méthodes propre aux soldat furtifs et ton équipement militaire sera adapté pour convenir à cette faction
 et modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s'appelle Anna 28 ans."`,
-    video: "assets/furtif.webp",
+    video: "assets/furtif.mp4",
     img: "assets/furtif.jpg",
     options: [
       {
@@ -148,7 +148,7 @@ et modifiable au cours de ton périple dans cette guerre. La commandante de cett
     text: `Amavia fit la description de cette faction : "Les guerriers est la faction principale de l'armée de Magnolia.
 En choisissant cette faction, tu recevras une formation guerrière et un équipement militaire conséquent à ton choix de faction et 
 modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s"appelle Iriana 27 ans"`,
-    video: "assets/warrior.webp",
+    video: "assets/warrior.mp4",
     img: "assets/guerrier.jpg",
     options: [
       {
@@ -163,7 +163,7 @@ modifiable au cours de ton périple dans cette guerre. La commandante de cette f
 et un instinct tactique très développé. Il s'agit de la faction la plus difficile, car la formation est très difficile mais payante à la fin. Par contre Malgus, pour le choix de l'équipement militaire tu devras faire preuve de discernement dans tes choix,
 car cela aura une influence de comment le commandant de cette faction fera appel à toi pour les missions(Cette faction est la seule où ton choix d'équpement militaire ne peut être modifié qu'une fois).
 Le commandant de cette faction s'appel Victor 40 ans.".`,
-    video: "assets/tacticien.webp",
+    video: "assets/tacticien.mp4",
     img: "assets/tacticien.jpg",
     options: [
       {
@@ -178,7 +178,7 @@ Le commandant de cette faction s'appel Victor 40 ans.".`,
 Pourtant, elles très efficaces même s'ils subissent des pertes importantes en conséquence de leur précipitation sur le champs de bataille. Cette faction à la particularité
 de combiner l'apprentissage des furtifs et des guerriers pour ainsi donner un style de combat improvisé, mais efficace. Quant, à l'équipement militaire, la combinaison mentionnée plus haut te permet d'avoir accès aux équipements des deux factions
 et modifiable au cours de ton périple dans cett guerre. Le commandant s'appel Ivan l'audacieux 32 ans.`,
-    video: "assets/berserker.webp",
+    video: "assets/berserker.mp4",
     img: "assets/berserker.jpg",
     options: [
       {
@@ -194,7 +194,7 @@ se compose d'une arme à feu à projectile magique, d'une épée et/ou poignard.
 et qu'il avait intégré l'armée de Magnolia. Les premiers affrontements furent difficile, mais victorieux au cours duquel
 il se distingua par sa bravoure, son intelligence et son travail d'équipe avec ces frères et soeurs d'arme. 
 Ces faits d'arme lui permis de gagner la confiance des autres et des alliés.`,
-    video: "assets/combat.webp",
+    video: "assets/combat.mp4",
     img: "assets/combat.jpg",
     options: [
       {
@@ -224,7 +224,7 @@ dont Marcel qui avait un comportement étrange depuis quelque temps. Sachant que
 Pendant, la bataille Malgus et Marcel se retrouvèrent séparer des autres. Malgus dit :"Ne perd pas espoir, nous allons nous en sortir et rejoindre les autres."
 Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. Et, en tombant à terre Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?"
 Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour qu'ils t'interrogent ou mourrir. Et, j'ai choisi de vivre!!!".`,
-    video: "assets/treason.webp",
+    video: "assets/treason.mp4",
     img: "assets/trahison.jpg",
     options: [
       {
@@ -282,7 +282,7 @@ La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pou
 Il maria la commandante Anna des furtifs et ce fut la meilleure décision qu'il prit depuis son arrivé. 
 Félicitation!!! Vous venez de finir le jeu, si vous voulez rejouer appuyer sur le bouton nouvelle partie.
 Je vous remercie d'avoir jouer à mon jeu!`,
-    video: "assets/newgame.webp",
+    video: "assets/newgame.mp4",
     img: "assets/finheureuse.jpg",
     options: [
       {
@@ -349,7 +349,7 @@ function goToChapter(chapterName) {
   let video = document.querySelector(".video");
   image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
   if (chaptersObj[chapterName].video) {
-    image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
+    image.innerHTML = `<video src="${chaptersObj[chapterName].video}" loop autoplay muted alt="chapter_video"/>`;
   } else {
     image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   }
