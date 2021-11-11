@@ -59,6 +59,7 @@ il s'agit d'une mesure préventive car voyez-vous nous sommes en guerre et mes h
 Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air défiant. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant." 
 Par contre, intérieurement, elle se dit : "Son histoire ne colle pas, quand on l'a retrouvé inconscient, il portait des vêtements à mi-chemin entre des vêtements normaux et d'une armure.
 Que dois faire, le croire ou non ?"`,
+    video: "assets/liar.mp4",
     img: "assets/mensonge.jpg",
     options: [
       {
