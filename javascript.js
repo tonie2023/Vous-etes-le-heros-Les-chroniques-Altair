@@ -355,7 +355,7 @@ function goToChapter(chapterName) {
   let buttons = document.querySelector(".bouton");
   
   audio.play();
-  
+
   console.log(audio);
   let video = document.querySelector(".video");
   image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
@@ -377,4 +377,9 @@ function goToChapter(chapterName) {
   console.log(chapitre.text);
   console.log(audio);
 }
-goToChapter("introduction");
+if(localStorage.getItem('chapitre') != undefined) {
+  chapitre = localStorage.getItem('chapitre');
+  goToChapter("introduction");
+} else{
+  goToChapter();
+}
