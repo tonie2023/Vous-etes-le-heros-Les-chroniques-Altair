@@ -41,6 +41,7 @@ img {
 .video {
   position: relative;
   bottom: 13px;
+  object-fit: fill;
   margin: auto;
   border-radius: 15px 15px 15px 15px;
   min-width: 400px;
