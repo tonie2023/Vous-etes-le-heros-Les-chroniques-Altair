@@ -344,6 +344,8 @@ let audio = new Audio("assets/sourisSimpleClic.mp3");
 
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
+  localStorage.setItem("chapitre", chapterName);
+  console.log(localStorage);
   let boite = document.querySelector(".texte");
   boite.innerText = chapitre.text;
   let sousTitre = document.querySelector(".subtitle");
@@ -351,10 +353,9 @@ function goToChapter(chapterName) {
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   let buttons = document.querySelector(".bouton");
-  buttons.addEventListener("click", function () {
-    audio.play();
-    goToChapter();
-  });
+  
+  audio.play();
+  
   console.log(audio);
   let video = document.querySelector(".video");
   image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
