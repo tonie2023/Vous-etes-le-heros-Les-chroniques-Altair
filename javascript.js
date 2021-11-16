@@ -379,6 +379,6 @@ function goToChapter(chapterName) {
 if (localStorage.getItem("chapitre") != undefined) {
   goToChapter(localStorage.getItem("chapitre"));
 } else {
-  goToChapter(`${subtitle}`);
-  console.log(chapterName);
+  goToChapter("introduction");
+  console.log(goToChapter);
 }
