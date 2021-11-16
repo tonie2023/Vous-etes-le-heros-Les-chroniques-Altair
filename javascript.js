@@ -340,7 +340,7 @@ function decision4() {
   }
 }
 
-let audio = new Audio("assets/sourisSimpleClic.mp3");
+let audio = new Audio("assets/finishHim.mp3");
 
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
@@ -376,10 +376,9 @@ function goToChapter(chapterName) {
   console.log(chapitre.text);
   console.log(audio);
 }
-let boite = document.querySelector(".boite");
 if (localStorage.getItem("chapitre") != undefined) {
-  chapitre = localStorage.getItem("chapitre");
-  goToChapter("introduction");
+  goToChapter(localStorage.getItem("chapitre"));
 } else {
-  goToChapter();
+  goToChapter(`${subtitle}`);
+  console.log(chapterName);
 }
