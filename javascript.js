@@ -304,6 +304,7 @@ function decision() {
 
 function impactDecision() {
   if (finalChoice == true) {
+    localStorage.setItem("key1", `${consternation}`);
     goToChapter(`fuite_hero`);
   } else {
     goToChapter(`destin_negatif`);
@@ -314,12 +315,12 @@ let finalChoice2 = 0;
 function decision1() {
   finalChoice2 = 1;
   if (finalChoice2 == false) {
+    localStorage.setItem("key1", `${consternation}`);
     goToChapter(`destin_negatif`);
   } else {
     goToChapter(`fuite_hero`);
   }
 }
-
 let finalChoice3 = 0;
 function decision3() {
   finalChoice3 = 1;
@@ -329,11 +330,11 @@ function decision3() {
     goToChapter(`destin_positif`);
   }
 }
-
 let finalChoice4 = 0;
 function decision4() {
   finalChoice4 = 1;
   if (finalChoice4 == true) {
+    localStorage.setItem("key", `${inquisition}`);
     goToChapter(`destin_positif`);
   } else {
     goToChapter(`destin_negatif`);
@@ -378,6 +379,8 @@ function goToChapter(chapterName) {
 }
 if (localStorage.getItem("chapitre") != undefined) {
   goToChapter(localStorage.getItem("chapitre"));
+  localStorage.getItem("key", `${inquisition}`);
+  localStorage.getItem("key1", `${consternation}`);
 } else {
   goToChapter("introduction");
   console.log(goToChapter);
