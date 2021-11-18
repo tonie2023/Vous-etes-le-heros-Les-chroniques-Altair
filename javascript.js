@@ -64,11 +64,11 @@ Que dois faire, le croire ou non ?"`,
     options: [
       {
         text: "Amavia ne croit pas Malgis(Malgus)",
-        action: "decision3()",
+        action: "goToChapter(`destin_negatif`)",
       },
       {
         text: "Amavia décide de croire Malgis(Malgus)",
-        action: "decision4()",
+        action: "goToChapter(`destin_positif)",
       },
     ],
   },
@@ -231,11 +231,11 @@ Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour 
     options: [
       {
         text: "Malgus capturé!",
-        action: "decision()",
+        action: "goToChapter(`destin_negatif`)",
       },
       {
         text: "Est-ce que Malgus parvient à s'échapper ?",
-        action: "decision1()",
+        action: "goToChapter(`fuite_hero`)",
       },
     ],
   },
@@ -295,50 +295,6 @@ Je vous remercie d'avoir jouer à mon jeu!`,
   },
 };
 
-let finalChoice = 0;
-
-function decision() {
-  finalChoice = 1;
-  goToChapter(`fuite_hero`);
-}
-
-function decision() {
-  if (finalChoice == true) {
-    localStorage.setItem("key1", `${consternation}`);
-    goToChapter(`fuite_hero`);
-  } else {
-    goToChapter(`destin_negatif`);
-  }
-}
-
-let finalChoice2 = 0;
-function decision1() {
-  finalChoice2 = 1;
-  if (finalChoice2 == false) {
-    goToChapter(`destin_negatif`);
-  } else {
-    goToChapter(`fuite_hero`);
-  }
-}
-let finalChoice3 = 0;
-function decision3() {
-  finalChoice3 = 1;
-  if (finalChoice3 == true) {
-    goToChapter(`destin_negatif`);
-  } else {
-    goToChapter(`destin_positif`);
-  }
-}
-let finalChoice4 = 0;
-function decision4() {
-  finalChoice4 = 1;
-  if (finalChoice4 == true) {
-    goToChapter(`destin_positif`);
-  } else {
-    localStorage.getItem("key", `${inquisition}`);
-    goToChapter(`destin_negatif`);
-  }
-}
 let audio = new Audio("assets/batman.mp3");
 
 function goToChapter(chapterName) {
@@ -377,8 +333,8 @@ function goToChapter(chapterName) {
 }
 if (localStorage.getItem("chapitre") != undefined) {
   goToChapter(localStorage.getItem("chapitre"));
-  localStorage.getItem("key", `${inquisition}`);
-  localStorage.getItem("key1", `${consternation}`);
+  localStorage.getItem("key");
+  localStorage.getItem("key1");
 } else {
   goToChapter("introduction");
   console.log(goToChapter);
