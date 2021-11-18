@@ -340,7 +340,7 @@ function decision4() {
   }
 }
 
-let audio = new Audio("assets/boingCartoon7.mp3");
+let audio = new Audio("assets/batman.mp3");
 
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
