@@ -302,7 +302,7 @@ function decision() {
   goToChapter(`fuite_hero`);
 }
 
-function impactDecision() {
+function decision() {
   if (finalChoice == true) {
     localStorage.setItem("key1", `${consternation}`);
     goToChapter(`fuite_hero`);
@@ -315,7 +315,6 @@ let finalChoice2 = 0;
 function decision1() {
   finalChoice2 = 1;
   if (finalChoice2 == false) {
-    localStorage.setItem("key1", `${consternation}`);
     goToChapter(`destin_negatif`);
   } else {
     goToChapter(`fuite_hero`);
@@ -334,13 +333,12 @@ let finalChoice4 = 0;
 function decision4() {
   finalChoice4 = 1;
   if (finalChoice4 == true) {
-    localStorage.setItem("key", `${inquisition}`);
     goToChapter(`destin_positif`);
   } else {
+    localStorage.getItem("key", `${inquisition}`);
     goToChapter(`destin_negatif`);
   }
 }
-
 let audio = new Audio("assets/batman.mp3");
 
 function goToChapter(chapterName) {
@@ -353,7 +351,7 @@ function goToChapter(chapterName) {
   let image = document.querySelector(".image");
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   let buttons = document.querySelector(".bouton");
-
+  console.log(localStorage);
   audio.play();
 
   console.log(audio);
