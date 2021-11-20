@@ -68,7 +68,7 @@ Que dois faire, le croire ou non ?"`,
       },
       {
         text: "Amavia décide de croire Malgis(Malgus)",
-        action: "goToChapter(`destin_positif)",
+        action: "goToChapter(`destin_positif`)",
       },
     ],
   },
@@ -137,11 +137,11 @@ et modifiable au cours de ton périple dans cette guerre. La commandante de cett
     options: [
       {
         text: "Choisir",
-        action: "goToChapter(`premiers_combats`)",
+        action: "setFaction('furtifs')",
       },
       {
         text: "Revenir au menu des factions",
-        action: "goToChapter(`integration_armee`)",
+        action: "goToChapter('integration_armee')",
       },
     ],
   },
@@ -154,8 +154,12 @@ modifiable au cours de ton périple dans cette guerre. La commandante de cette f
     img: "assets/guerrier.jpg",
     options: [
       {
+        text: "Choisir",
+        action: "setFaction('guerriers')",
+      },
+      {
         text: "Revenir au menu des factions",
-        action: "goToChapter(`integration_armee`)",
+        action: "goToChapter('integration_armee')",
       },
     ],
   },
@@ -169,8 +173,12 @@ Le commandant de cette faction s'appel Victor 40 ans.".`,
     img: "assets/tacticien.jpg",
     options: [
       {
+        text: "Choisir",
+        action: "setFaction('tacticiens')",
+      },
+      {
         text: "Revenir au menu des factions",
-        action: "goToChapter(`integration_armee`)",
+        action: "goToChapter('integration_armee')",
       },
     ],
   },
@@ -184,8 +192,12 @@ et modifiable au cours de ton périple dans cett guerre. Le commandant s'appel I
     img: "assets/berserker.jpg",
     options: [
       {
+        text: "Choisir",
+        action: "setFaction('berserkers')",
+      },
+      {
         text: "Revenir au menu des factions",
-        action: "goToChapter(`integration_armee`)",
+        action: "goToChapter('integration_armee')",
       },
     ],
   },
@@ -230,19 +242,15 @@ Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour 
     img: "assets/trahison.jpg",
     options: [
       {
-        text: "Malgus capturé!",
-        action: "goToChapter(`destin_negatif`)",
-      },
-      {
-        text: "Est-ce que Malgus parvient à s'échapper ?",
-        action: "goToChapter(`fuite_hero`)",
+        text: "Suivant",
+        action: "isMalgusFurtifs()",
       },
     ],
   },
   fuite_hero: {
     subtitle: "Retour au front",
     text: `Suite à cette trahison de Marcel. Malgus était sur le point d'être capturé, mais il parvient à fuir 
-et à rentrer au camps de base des furtifs, où il raconta la trahison de Marcel.
+et à rentrer au camps de base des furtifs grâce aux techniques que ceux-ci lui ont appris, où il raconta la trahison de Marcel.
 Celui-ci fut jeter au cachot en attendant son sort. `,
     img: "assets/évasion.jpg",
     options: [
@@ -297,28 +305,46 @@ Je vous remercie d'avoir jouer à mon jeu!`,
 
 let audio = new Audio("assets/batman.mp3");
 
+let faction = "Les furtifs";
+if (localStorage.getItem("faction")) {
+  faction = localStorage.getItem("faction");
+}
+
+function setFaction(choix) {
+  faction = choix;
+  localStorage.getItem("faction", faction);
+  goToChapter("premiers_combats");
+}
+
+function isMalgusFurtifs() {
+  if (faction == "furtifs") {
+    goToChapter("fuite_hero");
+  } else {
+    goToChapter("destin_negatif");
+  }
+}
+
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   localStorage.setItem("chapitre", chapterName);
+
   let boite = document.querySelector(".texte");
   boite.innerText = chapitre.text;
+
   let sousTitre = document.querySelector(".subtitle");
   sousTitre.innerText = chapitre.subtitle;
-  let image = document.querySelector(".image");
-  image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
-  let buttons = document.querySelector(".bouton");
+  
   console.log(localStorage);
+  audio.currentTime = 0;
   audio.play();
 
-  console.log(audio);
-  let video = document.querySelector(".video");
-  image.innerHTML = `<video src="${chaptersObj[chapterName].video}" alt="chapter_video"/>`;
+  let image = document.querySelector(".image");
   if (chaptersObj[chapterName].video) {
     image.innerHTML = `<video class="video" src="${chaptersObj[chapterName].video}" loop autoplay muted alt="chapter_video"/>`;
   } else {
     image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img"/>`;
   }
-  console.log(chaptersObj[chapterName].video);
+
   let text = "";
   chapitre.options.forEach(function (opt) {
     let index = 0;
@@ -326,16 +352,15 @@ function goToChapter(chapterName) {
     index++;
     text += `<button class="no1" onclick="${opt.action}">${opt.text}</button>`;
   });
+  let buttons = document.querySelector(".bouton");
   buttons.innerHTML = text;
+
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
-  console.log(audio);
 }
+
 if (localStorage.getItem("chapitre") != undefined) {
   goToChapter(localStorage.getItem("chapitre"));
-  localStorage.getItem("key");
-  localStorage.getItem("key1");
 } else {
   goToChapter("introduction");
-  console.log(goToChapter);
 }
