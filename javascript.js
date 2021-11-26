@@ -33,7 +33,7 @@ La femme répéta la question : "Qui êtes-vous et d'où venez-vous?" `,
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -53,7 +53,7 @@ Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un 
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -80,7 +80,7 @@ Que dois faire, le croire ou non ?"`,
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -98,7 +98,7 @@ Ensuite, j'aurais une proposition à vous faire.".`,
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -116,7 +116,7 @@ Le héro est soit capturé ou mort. PARTIE TERMINÉ!!!`,
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -147,7 +147,7 @@ Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, i
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -169,7 +169,7 @@ et modifiable au cours de ton périple dans cette guerre. La commandante de cett
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -191,7 +191,7 @@ modifiable au cours de ton périple dans cette guerre. La commandante de cette f
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -214,7 +214,7 @@ Le commandant de cette faction s'appel Victor 40 ans.".`,
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -237,7 +237,7 @@ et modifiable au cours de ton périple dans cett guerre. Le commandant s'appel I
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -257,7 +257,7 @@ Ces faits d'arme lui permis de gagner la confiance des autres et des alliés.`,
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -274,7 +274,7 @@ Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne s
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -295,7 +295,7 @@ Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour 
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -312,7 +312,7 @@ Celui-ci fut jeter au cachot en attendant son sort. `,
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -328,7 +328,7 @@ Il était maintenant temps de parler de paix et d'avenir.`,
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -345,7 +345,7 @@ La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pou
       },
       {
         text: "Effacer ma partie",
-        action: "",
+        action: "reset()",
       },
     ],
   },
@@ -382,6 +382,7 @@ function setFaction(choix) {
 
 function isMalgusFurtifs() {
   if (faction == "furtifs") {
+    /*localStorage.setItem("choixMalgus", isMalgusFurtifs);*/
     goToChapter("fuite_hero");
   } else {
     goToChapter("destin_negatif");
@@ -423,7 +424,10 @@ function goToChapter(chapterName) {
   console.log(chapitre.text);
 }
 
-/*function reset*/
+function reset() {
+  localStorage.clear();
+  goToChapter("introduction");
+}
 
 if (localStorage.getItem("chapitre") != undefined) {
   goToChapter(localStorage.getItem("chapitre"));
