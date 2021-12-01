@@ -31,10 +31,6 @@ La femme répéta la question : "Qui êtes-vous et d'où venez-vous?" `,
         text: "Le héro lui ment",
         action: "goToChapter(`inquisition`)",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   interrogatoire_malgus: {
@@ -50,10 +46,6 @@ Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un 
       {
         text: "Amavia décide de croire l'histoire de Malgus",
         action: "goToChapter(`destin_positif`)",
-      },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
       },
     ],
   },
@@ -78,10 +70,6 @@ Que dois faire, le croire ou non ?"`,
         text: "Amavia décide de croire Malgis(Malgus)",
         action: "goToChapter(`destin_positif`)",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   destin_positif: {
@@ -96,10 +84,6 @@ Ensuite, j'aurais une proposition à vous faire.".`,
         text: "Amavia offre à Malgus d'intégrer son armée",
         action: "goToChapter(`integration_armee`)",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   destin_negatif: {
@@ -113,10 +97,6 @@ Le héro est soit capturé ou mort. PARTIE TERMINÉ!!!`,
       {
         text: "La partie est terminé, veuillez recommencer une nouvelle partie!",
         action: "goToChapter(`introduction`)",
-      },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
       },
     ],
   },
@@ -145,10 +125,6 @@ Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, i
         text: "Les berserkers",
         action: "goToChapter(`faction_4`)",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   faction_1: {
@@ -167,10 +143,6 @@ et modifiable au cours de ton périple dans cette guerre. La commandante de cett
         text: "Revenir au menu des factions",
         action: "goToChapter('integration_armee')",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   faction_2: {
@@ -188,10 +160,6 @@ modifiable au cours de ton périple dans cette guerre. La commandante de cette f
       {
         text: "Revenir au menu des factions",
         action: "goToChapter('integration_armee')",
-      },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
       },
     ],
   },
@@ -212,10 +180,6 @@ Le commandant de cette faction s'appel Victor 40 ans.".`,
         text: "Revenir au menu des factions",
         action: "goToChapter('integration_armee')",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   faction_4: {
@@ -235,10 +199,6 @@ et modifiable au cours de ton périple dans cett guerre. Le commandant s'appel I
         text: "Revenir au menu des factions",
         action: "goToChapter('integration_armee')",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   premiers_combats: {
@@ -255,10 +215,6 @@ Ces faits d'arme lui permis de gagner la confiance des autres et des alliés.`,
         text: "Malgus se fait de nombreux alliés dont les commandantes Amavia et Anna",
         action: "goToChapter(`confiance_mutuelle`)",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   confiance_mutuelle: {
@@ -271,10 +227,6 @@ Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne s
       {
         text: "Qui est le traître?",
         action: "goToChapter(`consternation`)",
-      },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
       },
     ],
   },
@@ -293,10 +245,6 @@ Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour 
         text: "Suivant",
         action: "isMalgusFurtifs()",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   fuite_hero: {
@@ -310,10 +258,6 @@ Celui-ci fut jeter au cachot en attendant son sort. `,
         text: "Poursuite des derniers combats pour la victoire finale",
         action: "goToChapter(`consecration`)",
       },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
-      },
     ],
   },
   consecration: {
@@ -325,10 +269,6 @@ Il était maintenant temps de parler de paix et d'avenir.`,
       {
         text: "La vie repris son cours et Marcel fut jugé",
         action: "goToChapter(`paix`)",
-      },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
       },
     ],
   },
@@ -342,10 +282,6 @@ La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pou
       {
         text: "Épilogue",
         action: "goToChapter(`epilogue`)",
-      },
-      {
-        text: "Effacer ma partie",
-        action: "reset()",
       },
     ],
   },
@@ -361,7 +297,7 @@ Je vous remercie d'avoir jouer à mon jeu!`,
     options: [
       {
         text: "Nouvelle partie?",
-        action: "goToChapter(`introduction`)",
+        action: "reset()",
       },
     ],
   },
@@ -370,7 +306,7 @@ Je vous remercie d'avoir jouer à mon jeu!`,
 let audio = new Audio("assets/batman.mp3");
 
 let faction = "Les furtifs";
-if (localStorage.getItem("faction")) {
+if (localStorage.getItem("faction") != null) {
   faction = localStorage.getItem("faction");
 }
 
@@ -425,12 +361,28 @@ function goToChapter(chapterName) {
 }
 
 function reset() {
+  faction = false;
   localStorage.clear();
   goToChapter("introduction");
 }
 
-if (localStorage.getItem("chapitre") != undefined) {
-  goToChapter(localStorage.getItem("chapitre"));
-} else {
-  goToChapter("introduction");
+const choixSonore = document.querySelector("#son");
+choixSonore.addEventListener("change", function () {
+  if (choixSonore.checked != true) {
+    audio.volume = 0;
+  } else {
+    audio.volume = 1;
+  }
+});
+
+const reinitialiser = document.querySelector(".reinitialiser");
+reinitialiser.addEventListener("click", function () {
+  reset();
+});
+console.log(reinitialiser);
+
+let chapitreDepart = "introduction";
+if (localStorage.getItem("chapitre") != null) {
+  chapitreDepart = localStorage.getItem("chapitre");
 }
+goToChapter(chapitreDepart);

@@ -102,6 +102,11 @@ h2,
 .bouton {
   order: -2;
 }
+.boite,
+.bouton,
+.revisionChoix {
+  order: -3;
+}
 .bouton {
   display: flex;
   justify-content: space-between;
@@ -115,9 +120,11 @@ button {
   font-family: lato, sans-serif;
   font-weight: bold;
   background-color: #39a0ed;
+  display: inline-block;
   padding: 5px;
   border-radius: 5px 5px 5px 5px;
   border-style: none;
+  cursor: pointer;
 }
 button:hover {
   background: #c5d5e4;

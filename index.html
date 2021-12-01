@@ -8,6 +8,8 @@
     <title>Vous êtes le héro</title>
   </head>
   <body>
+    <div class="introduction"></div>
+    <div class="confiance_mutuelle"></div>
     <div class="flex">
       <div class="boite">
         <p class="image">
@@ -25,9 +27,13 @@
           <button class="no1" onclick="btn1()">ex ea commodo</button>
           <button class="no2" onclick="btn2()">nisi ut aliquip</button>
           <button class="no3" onclick="btn3()">ullamco laboris</button>
-          <button class="no4" onclick="btn4()">ullamco laboris</button>
         </div>
-        <div class="boiteCocher"></div>
+        <div class="revisionChoix">
+          <label class="text">
+            <input type="checkbox" name="choixAudio" id="son" checked /> son
+          </label>
+          <button class="reinitialiser">Effacer ma partie</button>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="javascript.js"></script>
