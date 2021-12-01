@@ -16,6 +16,11 @@ body {
   display: flex;
   height: 100%;
 }
+.introduction {
+  position: absolute;
+  left: 34%;
+  top: 34%;
+}
 .boite {
   display: flex;
 }
