@@ -18,8 +18,16 @@ body {
 }
 .introduction {
   position: absolute;
-  left: 34%;
-  top: 34%;
+  margin: 0;
+}
+.debutJeu {
+  background-image: url("assets/play.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0 0 0 0;
+  opacity: 0.2;
 }
 .boite {
   display: flex;
