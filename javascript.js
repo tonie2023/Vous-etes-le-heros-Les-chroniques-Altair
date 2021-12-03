@@ -6,6 +6,7 @@ Mon nom est Malgus noid et j'ai 27 ans. Je suis originaire du pays Alcoria et je
 Mon histoire débuta lors d'une patrouille en forêt où un phénomène magique se produisit me séparant de mes hommes et me faisant perdre connaissance.
 À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux
 une femme en armure posa la question suivante : Qui êtes-vous ?`,
+    backgroundImage: "",
     video: "assets/introductionPlayer.mp4",
     img: "assets/vortex.jpg",
     options: [
@@ -335,9 +336,20 @@ function goToChapter(chapterName) {
   let sousTitre = document.querySelector(".subtitle");
   sousTitre.innerText = chapitre.subtitle;
 
+  const body = document.querySelector("body");
+  const didacticiel = document.querySelector("didacticiel");
+
   console.log(localStorage);
   audio.currentTime = 0;
   audio.play();
+
+  function wallpaper() {
+    if (body.classList.contains("didacticiel")) {
+      didacticiel.classList.add("didacticiel");
+    } else {
+      body.classList.remove("didacticiel");
+    }
+  }
 
   let image = document.querySelector(".image");
   if (chaptersObj[chapterName].video) {
