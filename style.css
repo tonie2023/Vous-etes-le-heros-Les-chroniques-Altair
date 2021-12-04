@@ -25,6 +25,7 @@ body {
   height: 100%;
 }
 .debutJeu {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -34,12 +35,6 @@ body {
   height: 100vh;
   border-radius: 0 0 0 0;
   opacity: 0.2;
-}
-.debutJeu .didacticiel {
-  display: inline-block;
-}
-.debutJeu .didacticiel {
-  display: none;
 }
 .boite {
   display: flex;
