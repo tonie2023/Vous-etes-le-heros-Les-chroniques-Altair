@@ -373,12 +373,8 @@ choixSonore.addEventListener("change", function () {
     audio.volume = 1;
   }
 });
-const debutJeu = document.querySelector(".debutJeu");
-if (debutJeu.classList.contains("debutJeu")) {
-  document.getElementsByClassName("debutJeu").style.display = "visible";
-} else {
-  document.getElementsByClassName("debutJeu").style.display = "none";
-}
+const body = document.querySelector("body");
+body.classList.add(".introduction");
 
 const reinitialiser = document.querySelector(".reinitialiser");
 reinitialiser.addEventListener("click", function () {
