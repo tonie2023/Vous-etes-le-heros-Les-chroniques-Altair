@@ -335,21 +335,9 @@ function goToChapter(chapterName) {
 
   let sousTitre = document.querySelector(".subtitle");
   sousTitre.innerText = chapitre.subtitle;
-
-  const body = document.querySelector("body");
-  const didacticiel = document.querySelector("didacticiel");
-
   console.log(localStorage);
   audio.currentTime = 0;
   audio.play();
-
-  function wallpaper() {
-    if (body.classList.contains("didacticiel")) {
-      didacticiel.classList.add("didacticiel");
-    } else {
-      body.classList.remove("didacticiel");
-    }
-  }
 
   let image = document.querySelector(".image");
   if (chaptersObj[chapterName].video) {
