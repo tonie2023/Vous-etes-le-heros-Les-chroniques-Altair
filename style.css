@@ -36,7 +36,7 @@ body {
   opacity: 0.2;
 }
 .debutJeu .didacticiel {
-  display: flex;
+  display: inline-block;
 }
 .debutJeu .didacticiel {
   display: none;
