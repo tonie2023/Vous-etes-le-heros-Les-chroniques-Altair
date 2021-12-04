@@ -25,7 +25,6 @@ body {
   height: 100%;
 }
 .debutJeu {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,14 +35,11 @@ body {
   border-radius: 0 0 0 0;
   opacity: 0.2;
 }
-.debutJeu {
+.debutJeu .didacticiel {
+  display: flex;
+}
+.debutJeu .didacticiel {
   display: none;
-}
-.debutJeu .didacticiel {
-  display: inline-block;
-}
-.debutJeu .didacticiel {
-  display: visible;
 }
 .boite {
   display: flex;
@@ -55,9 +51,6 @@ body {
   background-color: #3a3e3b;
   justify-content: center;
   align-items: center;
-}
-img {
-  display: flex;
 }
 img {
   position: relative;
