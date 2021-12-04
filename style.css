@@ -109,7 +109,6 @@ h1,
 h2,
 img,
 .boite {
-  display: flex;
   flex-direction: column-reverse;
 }
 .flex,
