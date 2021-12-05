@@ -355,7 +355,8 @@ function goToChapter(chapterName) {
   });
   let buttons = document.querySelector(".bouton");
   buttons.innerHTML = text;
-
+  const body = document.querySelector("body");
+  body.classList.add(".introduction");
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
 }
@@ -374,8 +375,6 @@ choixSonore.addEventListener("change", function () {
     audio.volume = 1;
   }
 });
-const body = document.querySelector("body");
-body.classList.add(".introduction");
 
 const reinitialiser = document.querySelector(".reinitialiser");
 reinitialiser.addEventListener("click", function () {
