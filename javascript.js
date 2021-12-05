@@ -327,6 +327,7 @@ function isMalgusFurtifs() {
 
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
+  console.log(chapterName);
   localStorage.setItem("chapitre", chapterName);
 
   let boite = document.querySelector(".texte");
