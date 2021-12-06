@@ -304,6 +304,8 @@ Je vous remercie d'avoir jouer à mon jeu!`,
 };
 
 let audio = new Audio("assets/batman.mp3");
+let audio1 = new Audio("assets/startGame.mp3");
+let audio2 = new Audio("assets/startSound.mp3");
 
 let faction = "Les furtifs";
 if (localStorage.getItem("faction") != null) {
@@ -336,8 +338,6 @@ function goToChapter(chapterName) {
   let sousTitre = document.querySelector(".subtitle");
   sousTitre.innerText = chapitre.subtitle;
   console.log(localStorage);
-  audio.currentTime = 0;
-  audio.play();
 
   let image = document.querySelector(".image");
   if (chaptersObj[chapterName].video) {
@@ -355,10 +355,24 @@ function goToChapter(chapterName) {
   });
   let buttons = document.querySelector(".bouton");
   buttons.innerHTML = text;
+
   const body = document.querySelector("body");
   body.className = chapterName;
+
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
+
+  if (body.classList.contains("reveil_hero")) {
+    audio1.currentTime = 0;
+    audio1.play();
+    console.log(audio1);
+  } else if (body.classList.contains("epilogue")) {
+    audio2.currentTime = 0;
+    audio2.play();
+  } else {
+    audio.currentTime = 0;
+    audio.play();
+  }
 }
 
 function reset() {
