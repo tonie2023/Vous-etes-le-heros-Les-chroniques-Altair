@@ -356,7 +356,7 @@ function goToChapter(chapterName) {
   let buttons = document.querySelector(".bouton");
   buttons.innerHTML = text;
   const body = document.querySelector("body");
-  body.classList.add(".introduction");
+  body.className = chapterName;
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
 }
