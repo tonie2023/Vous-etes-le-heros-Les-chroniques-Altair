@@ -17,13 +17,6 @@ body {
   display: flex;
   height: 100%;
 }
-.didacticiel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .introduction {
   background-image: url("assets/play.jpg");
   background-repeat: no-repeat;
@@ -164,4 +157,20 @@ button {
 }
 button:hover {
   background: #c5d5e4;
+}
+#son {
+  position: relative;
+  left: -190px;
+  top: -20px;
+}
+.sons {
+  position: relative;
+  left: -236px;
+  top: -22px;
+  font-weight: bold;
+}
+.reinitialiser {
+  position: relative;
+  left: 217px;
+  top: -20px;
 }
