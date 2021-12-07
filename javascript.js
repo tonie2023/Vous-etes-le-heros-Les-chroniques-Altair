@@ -304,7 +304,7 @@ Je vous remercie d'avoir jouer à mon jeu!`,
 };
 
 let audio = new Audio("assets/batman.mp3");
-let audio1 = new Audio("assets/startGame.mp3");
+let audio1 = new Audio("assets/herewego.mp3");
 let audio2 = new Audio("assets/startSound.mp3");
 
 let faction = "Les furtifs";
@@ -385,8 +385,12 @@ const choixSonore = document.querySelector("#son");
 choixSonore.addEventListener("change", function () {
   if (choixSonore.checked != true) {
     audio.volume = 0;
+    audio1.volume = 0;
+    audio2.volume = 0;
   } else {
     audio.volume = 1;
+    audio1.volume = 1;
+    audio2.volume = 1;
   }
 });
 

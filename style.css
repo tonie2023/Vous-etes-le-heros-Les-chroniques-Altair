@@ -60,6 +60,7 @@ body {
 }
 img {
   position: relative;
+  top: -10px;
   margin: auto;
   border-radius: 15px 15px 15px 15px;
   min-width: 400px;
@@ -93,6 +94,8 @@ img {
   display: flex;
 }
 .texte {
+  text-align: center;
+  line-height: 18px;
   font-size: 14px;
   margin: auto;
   padding-bottom: 14px;
