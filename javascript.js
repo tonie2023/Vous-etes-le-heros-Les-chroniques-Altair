@@ -306,6 +306,7 @@ Je vous remercie d'avoir jouer à mon jeu!`,
 let audio = new Audio("assets/batman.mp3");
 let audio1 = new Audio("assets/herewego.mp3");
 let audio2 = new Audio("assets/startSound.mp3");
+let audio3 = new Audio("assets/evillaugh.mp3");
 
 let faction = "Les furtifs";
 if (localStorage.getItem("faction") != null) {
@@ -369,6 +370,9 @@ function goToChapter(chapterName) {
   } else if (body.classList.contains("epilogue")) {
     audio2.currentTime = 0;
     audio2.play();
+  } else if (body.classList.contains("faction_1")) {
+    audio3.currentTime = 0;
+    audio3.play();
   } else {
     audio.currentTime = 0;
     audio.play();
@@ -387,10 +391,12 @@ choixSonore.addEventListener("change", function () {
     audio.volume = 0;
     audio1.volume = 0;
     audio2.volume = 0;
+    audio3.volume = 0;
   } else {
     audio.volume = 1;
     audio1.volume = 1;
     audio2.volume = 1;
+    audio3.volume = 1;
   }
 });
 
