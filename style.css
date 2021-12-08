@@ -52,6 +52,7 @@ body {
 }
 .boite {
   margin: auto;
+  border-radius: 10px 10px 10px 10px;
   width: 650px;
   min-height: 100px;
   background-color: #3a3e3b;
@@ -94,7 +95,8 @@ img {
   display: flex;
 }
 .texte {
-  text-align: center;
+  text-align: justify;
+  font-weight: bold;
   line-height: 18px;
   font-size: 14px;
   margin: auto;
@@ -170,6 +172,8 @@ button:hover {
   position: relative;
   left: -236px;
   top: -22px;
+  font-family: lato, sans-serif;
+  color: #c5d5e4;
   font-weight: bold;
 }
 .reinitialiser {

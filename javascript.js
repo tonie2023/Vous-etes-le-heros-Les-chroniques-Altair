@@ -1,11 +1,8 @@
 let chaptersObj = {
   introduction: {
     subtitle: "Introduction du héro",
-    text: `Bonjour aventuriers, aventurières! 
-Mon nom est Malgus noid et j'ai 27 ans. Je suis originaire du pays Alcoria et je suis soldat dans l'armée du pays où la magie peut être utiliser par tous ces habitants et ailleurs dans le monde.
-Mon histoire débuta lors d'une patrouille en forêt où un phénomène magique se produisit me séparant de mes hommes et me faisant perdre connaissance.
-À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux
-une femme en armure posa la question suivante : Qui êtes-vous ?`,
+    text: `Bonjour aventuriers, aventurières! Mon nom est Malgus noid et j'ai 27 ans. Je suis originaire du pays Alcoria et je suis soldat dans l'armée du pays où la magie peut être utiliser par tous ces 
+habitants et ailleurs dans le monde. Mon histoire débuta lors d'une patrouille en forêt où un phénomène magique se produisit me séparant de mes hommes et me faisant perdre connaissance. À mon réveil, j'étais dans une cellule où de l'autre côté des barreaux une femme en armure posa la question suivante : Qui êtes-vous ?`,
     video: "assets/introductionPlayer.mp4",
     img: "assets/vortex.jpg",
     options: [
@@ -17,9 +14,7 @@ une femme en armure posa la question suivante : Qui êtes-vous ?`,
   },
   reveil_hero: {
     subtitle: "Réveil du héro",
-    text: `Malgus d'Astoria prit dans un phénomène magique inconnu perdit connaissance pour reprendre conscience dans une cellule.
-Confus de sa situation problématique. il reprit pied dans la réalité lorsqu'une voix de l'autre côté des barreaux 
-lui demanda: "Qui êtes-vous et d'où venez-vous? Malgus se retourna pour découvrir une femme en armure s'adressant à lui. 
+    text: `Malgus d'Astoria prit dans un phénomène magique inconnu perdit connaissance pour reprendre conscience dans une cellule. Confus de sa situation problématique. il reprit pied dans la réalité lorsqu'une voix de l'autre côté des barreaux lui demanda: "Qui êtes-vous et d'où venez-vous? Malgus se retourna pour découvrir une femme en armure s'adressant à lui. 
 La femme répéta la question : "Qui êtes-vous et d'où venez-vous?" `,
     img: "assets/interrogatoire.jpg",
     options: [
@@ -35,12 +30,7 @@ La femme répéta la question : "Qui êtes-vous et d'où venez-vous?" `,
   },
   interrogatoire_malgus: {
     subtitle: "Amavia",
-    text: `Malgus choisit l'honnêteté. "Je m'appelle Malgus, je suis un soldat de l'armée d'Alcoria.
-J'étais en patrouille lorsqu'un phénomène magique inconnu est survenu ce qui me fit perdre connaissance.
-À mon réveil, j'étais dans cette cellule. Pouvez-vous me dire où je suis et pourquoi, s'il-vous-plait? Cela m'aiderait à comprendre ma situation actuelle."
-La femme en armure répondit : "Je m'appelle Amavia, je suis la commandante de l'armée du royaume de Magnolia. Quant au pourquoi de votre situation,
-il s'agit d'une mesure préventive car voyez-vous nous sommes en guerre et mes hommes vous on trouvez inconscient sur notre territoire pensant que vous êtes un espion. L'êtes-vous ?"
-Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air résolu. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant. "`,
+    text: `Malgus choisit l'honnêteté. "Je m'appelle Malgus, je suis un soldat de l'armée d'Alcoria. J'étais en patrouille lorsqu'un phénomène magique inconnu est survenu ce qui me fit perdre connaissance. À mon réveil, j'étais dans cette cellule. Pouvez-vous me dire où je suis et pourquoi, s'il-vous-plait? Cela m'aiderait à comprendre ma situation actuelle." La femme en armure répondit : "Je m'appelle Amavia, je suis la commandante de l'armée du royaume de Magnolia. Quant au pourquoi de votre situation, il s'agit d'une mesure préventive car voyez-vous nous sommes en guerre et mes hommes vous on trouvez inconscient sur notre territoire pensant que vous êtes un espion. L'êtes-vous ?" Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air résolu. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant. "`,
     img: "assets/explication.jpg",
     options: [
       {
@@ -51,14 +41,9 @@ Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un 
   },
   inquisition: {
     subtitle: "Malhonnêteté inopportune",
-    text: `Malgus choisit le mensonge. "Je m'appelle Malgis, je suis marchand agricole.
-J'étais en route avec mes produits vers le marché de la capitale lorsque des brigands m'ont attaqué, pillé et assommé.
+    text: `Malgus choisit le mensonge. "Je m'appelle Malgis, je suis marchand agricole. J'étais en route avec mes produits vers le marché de la capitale lorsque des brigands m'ont attaqué, pillé et assommé.
 À mon réveil, j'étais dans cette cellule. Pouvez-vous me dire où je suis et pourquoi, s'il-vous-plait? 
-La femme en armure répondit : "Je m'appelle Amavia, je suis la commandante de l'armée du royaume de Magnolia. Quant au pourquoi de votre situation,
-il s'agit d'une mesure préventive car voyez-vous nous sommes en guerre et mes hommes vous on trouvez inconscient sur le territoire de la captitale pensant que vous êtes un espion. L'êtes-vous ?"
-Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air défiant. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant." 
-Par contre, intérieurement, elle se dit : "Son histoire ne colle pas, quand on l'a retrouvé inconscient, il portait des vêtements à mi-chemin entre des vêtements normaux et d'une armure.
-Que dois faire, le croire ou non ?"`,
+La femme en armure répondit : "Je m'appelle Amavia, je suis la commandante de l'armée du royaume de Magnolia. Quant au pourquoi de votre situation, il s'agit d'une mesure préventive car voyez-vous nous sommes en guerre et mes hommes vous on trouvez inconscient sur le territoire de la captitale pensant que vous êtes un espion. L'êtes-vous ?" Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air défiant. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant." Par contre, intérieurement, elle se dit : "Son histoire ne colle pas, quand on l'a retrouvé inconscient, il portait des vêtements à mi-chemin entre des vêtements normaux et d'une armure. Que dois faire, le croire ou non ?"`,
     video: "assets/liar.mp4",
     img: "assets/mensonge.jpg",
     options: [
@@ -74,10 +59,7 @@ Que dois faire, le croire ou non ?"`,
   },
   destin_positif: {
     subtitle: "Libération providentielle",
-    text: `Notre héro en cellule attendait la réponse de la commandante Amavia. 
-Après 5 minutes de réflexion, elle donna sa décision : "Malgus, après ce que vous venez de me révéler sur vous, j'ai pesé le pour et le contre et j'ai choisis de vous croire.".
-Elle ouvrit la porte de la cellule et dit : "Maintenant, laisser-moi vous éclairer sur la situation actuelle du royaume. 
-Ensuite, j'aurais une proposition à vous faire.".`,
+    text: `Notre héro en cellule attendait la réponse de la commandante Amavia. Après 5 minutes de réflexion, elle donna sa décision : "Malgus, après ce que vous venez de me révéler sur vous, j'ai pesé le pour et le contre et j'ai choisis de vous croire.". Elle ouvrit la porte de la cellule et dit : "Maintenant, laisser-moi vous éclairer sur la situation actuelle du royaume. Ensuite, j'aurais une proposition à vous faire.".`,
     img: "assets/choix.jpg",
     options: [
       {
@@ -88,9 +70,7 @@ Ensuite, j'aurais une proposition à vous faire.".`,
   },
   destin_negatif: {
     subtitle: "Partie terminé",
-    text: `Chers aventuriers et aventurières des Chroniques d'Altaïr
-vous venez de prendre une décision qui a eu des conséquences négatives pour notre héro. 
-Le héro est soit capturé ou mort. PARTIE TERMINÉ!!!`,
+    text: `Chers aventuriers et aventurières des Chroniques d'Altaïr, vous venez de prendre une décision qui a eu des conséquences négatives pour notre héro. Le héro est soit capturé ou mort. PARTIE TERMINÉ!!!`,
     video: "assets/gameover.mp4",
     img: "assets/gameover.jpg",
     options: [
@@ -102,10 +82,8 @@ Le héro est soit capturé ou mort. PARTIE TERMINÉ!!!`,
   },
   integration_armee: {
     subtitle: "Magnolia",
-    text: `Malgus choisis d'accepter l'offre de la commandante. Suite à la décision du héro, Amavia lui expliqua que le royaume de Magnolia est en guerre contre des envahisseurs d'outre-mer que l'on appel les discariens :
- Une race hybride mi-homme mi-féline. Elle expliqua également que cela fait 10 ans que la guerre a commencé et que les armées de Magnolia perdaient du terrain
-et que le royaume risquait depuis peu la défaite face à ces envahisseurs discariens. Elle finit en disant : "Voilà, la situation actuelle. est-ce que vous avez des questions ?"
-Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, il est temps pour vous de choisir entre 4 factions de l'armée : furtif, guerriers, tacticien ou berserker." `,
+    text: `Malgus choisis d'accepter l'offre de la commandante. Suite à la décision du héro, Amavia lui expliqua que le royaume de Magnolia est en guerre contre des envahisseurs d'outre-mer que l'on appel les discariens : Une race hybride mi-homme mi-féline. Elle expliqua également que cela fait 10 ans que la guerre a commencé et que les armées de Magnolia perdaient du terrain
+et que le royaume risquait depuis peu la défaite face à ces envahisseurs discariens. Elle finit en disant : "Voilà, la situation actuelle. est-ce que vous avez des questions ?" Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, il est temps pour vous de choisir entre 4 factions de l'armée : furtif, guerriers, tacticien ou berserker." `,
     video: "assets/choices.mp4",
     img: "assets/histoirejeu.jpg",
     options: [
@@ -129,9 +107,7 @@ Notre héro fit non de la tête. La commandante s'exclama : "Parfait dans cas, i
   },
   faction_1: {
     subtitle: "Les furtifs",
-    text: `Amavia fit la description de cette faction : "Les furtifs sont des soldats qui ont appris des méthodes permettant de mettre hors d'état de nuire ou de tuer leurs adversaires discariens.
-En choisissant cette faction, tu apprendras alors les techniques de combats et les méthodes propre aux soldat furtifs et ton équipement militaire sera adapté pour convenir à cette faction
-et modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s'appelle Anna 28 ans."`,
+    text: `Amavia fit la description de cette faction : "Les furtifs sont des soldats qui ont appris des méthodes permettant de mettre hors d'état de nuire ou de tuer leurs adversaires discariens. En choisissant cette faction, tu apprendras alors les techniques de combats et les méthodes propre aux soldat furtifs et ton équipement militaire sera adapté pour convenir à cette faction et modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s'appelle Anna 28 ans."`,
     video: "assets/furtif.mp4",
     img: "assets/furtif.jpg",
     options: [
@@ -147,9 +123,7 @@ et modifiable au cours de ton périple dans cette guerre. La commandante de cett
   },
   faction_2: {
     subtitle: "Les guerriers",
-    text: `Amavia fit la description de cette faction : "Les guerriers est la faction principale de l'armée de Magnolia.
-En choisissant cette faction, tu recevras une formation guerrière et un équipement militaire conséquent à ton choix de faction et 
-modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s"appelle Iriana 27 ans"`,
+    text: `Amavia fit la description de cette faction : "Les guerriers est la faction principale de l'armée de Magnolia. En choisissant cette faction, tu recevras une formation guerrière et un équipement militaire conséquent à ton choix de faction et modifiable au cours de ton périple dans cette guerre. La commandante de cette faction s"appelle Iriana 27 ans"`,
     video: "assets/warrior.mp4",
     img: "assets/guerrier.jpg",
     options: [
@@ -165,10 +139,7 @@ modifiable au cours de ton périple dans cette guerre. La commandante de cette f
   },
   faction_3: {
     subtitle: "Les tacticiens",
-    text: `Amavia fit la description de cette faction : "Les tacticiens est une faction de soldat plus petite puisqu'elle ne compte que des gens ayant une grande intelligence 
-et un instinct tactique très développé. Il s'agit de la faction la plus difficile, car la formation est très difficile mais payante à la fin. Par contre Malgus, pour le choix de l'équipement militaire tu devras faire preuve de discernement dans tes choix,
-car cela aura une influence de comment le commandant de cette faction fera appel à toi pour les missions(Cette faction est la seule où ton choix d'équpement militaire ne peut être modifié qu'une fois).
-Le commandant de cette faction s'appel Victor 40 ans.".`,
+    text: `Amavia fit la description de cette faction : "Les tacticiens est une faction de soldat plus petite puisqu'elle ne compte que des gens ayant une grande intelligence et un instinct tactique très développé. Il s'agit de la faction la plus difficile, car la formation est très difficile mais payante à la fin. Par contre Malgus, pour le choix de l'équipement militaire tu devras faire preuve de discernement dans tes choix, car cela aura une influence de comment le commandant de cette faction fera appel à toi pour les missions(Cette faction est la seule où ton choix d'équpement militaire ne peut être modifié qu'une fois). Le commandant de cette faction s'appel Victor 40 ans.".`,
     video: "assets/tacticien.mp4",
     img: "assets/tacticien.jpg",
     options: [
@@ -184,10 +155,7 @@ Le commandant de cette faction s'appel Victor 40 ans.".`,
   },
   faction_4: {
     subtitle: "Les berserkers",
-    text: `Amavia fit la description de cette faction : Les berserkers sont une faction de soldat que l'on pourrait qualifié de casse-cou dans le sens qu'ils ne réfléchissent pas avant de foncer sur l'ennemi discarien.
-Pourtant, elles très efficaces même s'ils subissent des pertes importantes en conséquence de leur précipitation sur le champs de bataille. Cette faction à la particularité
-de combiner l'apprentissage des furtifs et des guerriers pour ainsi donner un style de combat improvisé, mais efficace. Quant, à l'équipement militaire, la combinaison mentionnée plus haut te permet d'avoir accès aux équipements des deux factions
-et modifiable au cours de ton périple dans cett guerre. Le commandant s'appel Ivan l'audacieux 32 ans.`,
+    text: `Amavia fit la description de cette faction : Les berserkers sont une faction de soldat que l'on pourrait qualifié de casse-cou dans le sens qu'ils ne réfléchissent pas avant de foncer sur l'ennemi discarien. Pourtant, elles très efficaces même s'ils subissent des pertes importantes en conséquence de leur précipitation sur le champs de bataille. Cette faction à la particularité de combiner l'apprentissage des furtifs et des guerriers pour ainsi donner un style de combat improvisé, mais efficace. Quant, à l'équipement militaire, la combinaison mentionnée plus haut te permet d'avoir accès aux équipements des deux factions et modifiable au cours de ton périple dans cett guerre. Le commandant s'appel Ivan l'audacieux 32 ans.`,
     video: "assets/berserker.mp4",
     img: "assets/berserker.jpg",
     options: [
@@ -203,11 +171,7 @@ et modifiable au cours de ton périple dans cett guerre. Le commandant s'appel I
   },
   premiers_combats: {
     subtitle: "Marche vers les envahisseurs discariens",
-    text: `Malgus choisis la faction furtive. Une fois que la formation des furtives fut terminée, la commandante Amavia vint lui expliquer que le choix d'arme au début
-se compose d'une arme à feu à projectile magique, d'une épée et/ou poignard. Par la suite, Malgus prit la route vers ces premiers combats. Cela faisait 3 mois qu'il était apparu dans ce monde
-et qu'il avait intégré l'armée de Magnolia. Les premiers affrontements furent difficile, mais victorieux au cours duquel
-il se distingua par sa bravoure, son intelligence et son travail d'équipe avec ces frères et soeurs d'arme. 
-Ces faits d'arme lui permis de gagner la confiance des autres et des alliés.`,
+    text: `Malgus choisis la faction furtive. Une fois que la formation des furtives fut terminée, la commandante Amavia vint lui expliquer que le choix d'arme au début se compose d'une arme à feu à projectile magique, d'une épée et/ou poignard. Par la suite, Malgus prit la route vers ces premiers combats. Cela faisait 3 mois qu'il était apparu dans ce monde et qu'il avait intégré l'armée de Magnolia. Les premiers affrontements furent difficile, mais victorieux au cours duquel il se distingua par sa bravoure, son intelligence et son travail d'équipe avec ces frères et soeurs d'arme. Ces faits d'arme lui permis de gagner la confiance des autres et des alliés.`,
     video: "assets/combat.mp4",
     img: "assets/combat.jpg",
     options: [
@@ -219,9 +183,7 @@ Ces faits d'arme lui permis de gagner la confiance des autres et des alliés.`,
   },
   confiance_mutuelle: {
     subtitle: "Frères et soeurs d'arme unis",
-    text: `Par ses actes, sa bravoure, son intelligence et son travail d'équipe,
-Malgus se fit de nombreux alliés dont certaines devirent plus proche au point de développer des sentiments pour lui. 
-Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés dans sa faction avait un secret potentiellement lourds de conséquences pour notre héro.`,
+    text: `Par ses actes, sa bravoure, son intelligence et son travail d'équipe, Malgus se fit de nombreux alliés dont certaines devirent plus proche au point de développer des sentiments pour lui. Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés dans sa faction avait un secret potentiellement lourds de conséquences pour notre héro.`,
     img: "assets/allié.jpg",
     options: [
       {
@@ -232,12 +194,7 @@ Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne s
   },
   consternation: {
     subtitle: "Trahison d'un ami",
-    text: `Au cours des 2 mois suivant, malgré quelques défaites mineures, Malgus et sa faction remportèrent d'importantes victoires poussant l'ennemi discarien dans ses derniers retranchements.
-Au cours de cette série de victoire, Malgus se rapprocha des commandantes Amavia et Anna, se fit des amis 
-dont Marcel qui avait un comportement étrange depuis quelque temps. Sachant que la victoire finale était proche, l'armée de Magnolia lança le dernier assaut contre les discariens.
-Pendant, la bataille Malgus et Marcel se retrouvèrent séparer des autres. Malgus dit :"Ne perd pas espoir, nous allons nous en sortir et rejoindre les autres."
-Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. Et, en tombant à terre Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?"
-Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour qu'ils t'interrogent ou mourrir. Et, j'ai choisi de vivre!!!".`,
+    text: `Au cours des 2 mois suivant, malgré quelques défaites mineures, Malgus et sa faction remportèrent d'importantes victoires poussant l'ennemi discarien dans ses derniers retranchements. Au cours de cette série de victoire, Malgus se rapprocha des commandantes Amavia et Anna, se fit des amis dont Marcel qui avait un comportement étrange depuis quelque temps. Sachant que la victoire finale était proche, l'armée de Magnolia lança le dernier assaut contre les discariens. Pendant, la bataille Malgus et Marcel se retrouvèrent séparer des autres. Malgus dit :"Ne perd pas espoir, nous allons nous en sortir et rejoindre les autres." Marcel dit :"Moi oui, mais pas toi!" avant de lui assener un coup derrière la tête. Et, en tombant à terre Malgus dit : "Pourquoi Marcel!? Pourquoi cette trahison?" Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour qu'ils t'interrogent ou mourrir. Et, j'ai choisi de vivre!!!".`,
     video: "assets/treason.mp4",
     img: "assets/trahison.jpg",
     options: [
@@ -249,9 +206,7 @@ Marcel répondit : "Je n'avais pas le choix, j'avais le choix de te trahir pour 
   },
   fuite_hero: {
     subtitle: "Retour au front",
-    text: `Suite à cette trahison de Marcel. Malgus était sur le point d'être capturé, mais il parvient à fuir 
-et à rentrer au camps de base des furtifs grâce aux techniques que ceux-ci lui ont appris, où il raconta la trahison de Marcel.
-Celui-ci fut jeter au cachot en attendant son sort. `,
+    text: `Suite à cette trahison de Marcel. Malgus était sur le point d'être capturé, mais il parvient à fuir et à rentrer au camps de base des furtifs grâce aux techniques que ceux-ci lui ont appris, où il raconta la trahison de Marcel. Celui-ci fut jeter au cachot en attendant son sort. `,
     img: "assets/évasion.jpg",
     options: [
       {
@@ -262,8 +217,7 @@ Celui-ci fut jeter au cachot en attendant son sort. `,
   },
   consecration: {
     subtitle: "Magnolia victorieuse",
-    text: `La dernière bataille s'engagea dans sa dernière ligne droite où l'armée de Magnolia et Malgus furent au bout du compte victorieux et repoussèrent l'ennemi discarien hors du royaume. 
-Il était maintenant temps de parler de paix et d'avenir.`,
+    text: `La dernière bataille s'engagea dans sa dernière ligne droite où l'armée de Magnolia et Malgus furent au bout du compte victorieux et repoussèrent l'ennemi discarien hors du royaume. Il était maintenant temps de parler de paix et d'avenir.`,
     img: "assets/victoire.jpg",
     options: [
       {
@@ -274,9 +228,7 @@ Il était maintenant temps de parler de paix et d'avenir.`,
   },
   paix: {
     subtitle: "Retour triomphale",
-    text: `Un mois passa suite à la victoire sur l'ennemi, au cours duquel l'ordre fut rétablit dans royaume ayant été ravagé par le chaos de la guerre.
-Le traite Marcel fut condamnné à la prison à vie. Des célébrations grandioses furent organisées pour les habitants du royaume pour fêter la victoire.
-La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pour Malgus.`,
+    text: `Un mois passa suite à la victoire sur l'ennemi, au cours duquel l'ordre fut rétablit dans royaume ayant été ravagé par le chaos de la guerre. Le traite Marcel fut condamnné à la prison à vie. Des célébrations grandioses furent organisées pour les habitants du royaume pour fêter la victoire. La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pour Malgus.`,
     img: "assets/paix.jpg",
     options: [
       {
@@ -287,11 +239,7 @@ La paix était de nouveau une réalité tangible. L'avenir s'annonce radieux pou
   },
   epilogue: {
     subtitle: "Fin heureuse",
-    text: `Une fois que les célébrations furent terminées, il était temps pour lui d'avoir une fin heureuse dans ce royaume qui était devenu le sien
-(sachant qu'il ne savait pas comment retourner d'où il venait à l'origine).
-Il maria la commandante Anna des furtifs et ce fut la meilleure décision qu'il prit depuis son arrivé. 
-Félicitation!!! Vous venez de finir le jeu, si vous voulez rejouer appuyer sur le bouton nouvelle partie.
-Je vous remercie d'avoir jouer à mon jeu!`,
+    text: `Une fois que les célébrations furent terminées, il était temps pour lui d'avoir une fin heureuse dans ce royaume qui était devenu le sien(sachant qu'il ne savait pas comment retourner d'où il venait à l'origine). Il maria la commandante Anna des furtifs et ce fut la meilleure décision qu'il prit depuis son arrivé. Félicitation!!! Vous venez de finir le jeu, si vous voulez rejouer appuyer sur le bouton nouvelle partie. Je vous remercie d'avoir jouer à mon jeu!`,
     video: "assets/newgame.mp4",
     img: "assets/finheureuse.jpg",
     options: [
@@ -321,7 +269,6 @@ function setFaction(choix) {
 
 function isMalgusFurtifs() {
   if (faction == "furtifs") {
-    /*localStorage.setItem("choixMalgus", isMalgusFurtifs);*/
     goToChapter("fuite_hero");
   } else {
     goToChapter("destin_negatif");
