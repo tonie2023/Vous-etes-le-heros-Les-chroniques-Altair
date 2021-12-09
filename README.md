@@ -1,4 +1,4 @@
-# Les chroniques Altair
+# Les chroniques d'Altaïr
 
 **[Développement web - Projet vous êtes le héros](https://smnarnold.com/projets/vous-etes-le-heros)**
 
