@@ -165,12 +165,12 @@ button:hover {
 }
 #son {
   position: relative;
-  left: -190px;
+  left: -186px;
   top: -20px;
 }
 .sons {
   position: relative;
-  left: -236px;
+  left: -233px;
   top: -22px;
   font-family: lato, sans-serif;
   color: #c5d5e4;
@@ -178,6 +178,6 @@ button:hover {
 }
 .reinitialiser {
   position: relative;
-  left: 217px;
+  left: 215.5px;
   top: -20px;
 }

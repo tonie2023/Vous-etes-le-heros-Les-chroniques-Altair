@@ -30,7 +30,7 @@ La femme répéta la question : "Qui êtes-vous et d'où venez-vous?" `,
   },
   interrogatoire_malgus: {
     subtitle: "Amavia",
-    text: `Malgus choisit l'honnêteté. "Je m'appelle Malgus, je suis un soldat de l'armée d'Alcoria. J'étais en patrouille lorsqu'un phénomène magique inconnu est survenu ce qui me fit perdre connaissance. À mon réveil, j'étais dans cette cellule. Pouvez-vous me dire où je suis et pourquoi, s'il-vous-plait? Cela m'aiderait à comprendre ma situation actuelle." La femme en armure répondit : "Je m'appelle Amavia, je suis la commandante de l'armée du royaume de Magnolia. Quant au pourquoi de votre situation, il s'agit d'une mesure préventive car voyez-vous nous sommes en guerre et mes hommes vous on trouvez inconscient sur notre territoire pensant que vous êtes un espion. L'êtes-vous ?" Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air résolu. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant. "`,
+    text: `Malgus choisit l'honnêteté. "Je m'appelle Malgus, je suis un soldat de l'armée d'Alcoria. J'étais en patrouille lorsqu'un phénomène magique inconnu est survenu et qui me fit perdre connaissance. À mon réveil, j'étais dans cette cellule. Pouvez-vous me dire où je suis et pourquoi, s'il-vous-plait? Cela m'aiderait à comprendre ma situation actuelle." La femme en armure répondit : "Je m'appelle Amavia, je suis la commandante de l'armée du royaume de Magnolia. Quant au pourquoi de votre situation, il s'agit d'une mesure préventive car voyez-vous nous sommes en guerre et mes hommes vous on trouvez inconscient sur notre territoire pensant que vous êtes un espion. L'êtes-vous ?" Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air résolu. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant. "`,
     img: "assets/explication.jpg",
     options: [
       {
@@ -41,9 +41,7 @@ La femme répéta la question : "Qui êtes-vous et d'où venez-vous?" `,
   },
   inquisition: {
     subtitle: "Malhonnêteté inopportune",
-    text: `Malgus choisit le mensonge. "Je m'appelle Malgis, je suis marchand agricole. J'étais en route avec mes produits vers le marché de la capitale lorsque des brigands m'ont attaqué, pillé et assommé.
-À mon réveil, j'étais dans cette cellule. Pouvez-vous me dire où je suis et pourquoi, s'il-vous-plait? 
-La femme en armure répondit : "Je m'appelle Amavia, je suis la commandante de l'armée du royaume de Magnolia. Quant au pourquoi de votre situation, il s'agit d'une mesure préventive car voyez-vous nous sommes en guerre et mes hommes vous on trouvez inconscient sur le territoire de la captitale pensant que vous êtes un espion. L'êtes-vous ?" Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air défiant. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant." Par contre, intérieurement, elle se dit : "Son histoire ne colle pas, quand on l'a retrouvé inconscient, il portait des vêtements à mi-chemin entre des vêtements normaux et d'une armure. Que dois faire, le croire ou non ?"`,
+    text: `Malgus choisit le mensonge. "Je m'appelle Malgis, je suis marchand agricole. J'étais en route avec mes produits vers le marché de la capitale lorsque des brigands m'ont attaqué, pillé et assommé. À mon réveil, j'étais dans cette cellule. La femme en armure répondit : "Je m'appelle Amavia, je suis la commandante de l'armée du royaume de Magnolia. Quant au pourquoi de votre situation, il s'agit d'une mesure préventive car voyez-vous nous sommes en guerre et mes hommes vous on trouvez inconscient sur le territoire de la captitale pensant que vous êtes un espion. L'êtes-vous ?" Malgus lui répondit : "Non commandante, je ne suis pas un espion." dit-il d'un air défiant. La commandante lui-répondit: "C'est ce que je vais déterminé à l'instant." Par contre, intérieurement, elle se dit : "Son histoire ne colle pas, quand on l'a retrouvé inconscient, il portait des vêtements à mi-chemin entre des vêtements normaux et d'une armure. Que dois faire, le croire ou non ?"`,
     video: "assets/liar.mp4",
     img: "assets/mensonge.jpg",
     options: [
@@ -183,7 +181,7 @@ et que le royaume risquait depuis peu la défaite face à ces envahisseurs disca
   },
   confiance_mutuelle: {
     subtitle: "Frères et soeurs d'arme unis",
-    text: `Par ses actes, sa bravoure, son intelligence et son travail d'équipe, Malgus se fit de nombreux alliés dont certaines devirent plus proche au point de développer des sentiments pour lui. Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés dans sa faction avait un secret potentiellement lourds de conséquences pour notre héro.`,
+    text: `Par ses actes, sa bravoure, son intelligence et son travail d'équipe, Malgus se fit de nombreux alliés dont certaines devirent plus proche au point de développer des sentiments pour lui. Dont, la commandante Amavia et la commandante Anna. Par contre, notre héro ne se doutait point que l'un de ses nouveaux alliés(Marcel) dans sa faction avait un secret potentiellement lourds de conséquences pour notre héro.`,
     img: "assets/allié.jpg",
     options: [
       {
